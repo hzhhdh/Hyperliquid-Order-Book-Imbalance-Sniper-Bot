@@ -3,6 +3,8 @@
 # DEX Trading Tool
 A professional trading platform for large-scale transactions on DEX in EVM networks. Features include automatic order splitting (Smart Split), integration with Uniswap, Sushiswap, Curve, risk management with Chainlink and Pyth, Dark Pool for confidentiality, multisig wallets, cross-chain swaps, and professional analytics. Gas optimization, mempool monitoring, and scam protection ensure safe and fast order execution in DeFi
 
+Is a professional tool for large traders and investors working with amounts over $100K on DEX in EVM networks. The platform offers liquidity aggregation, risk management, anti-scam system and high speed trade execution.
+
 This Bot, a DeFi Trading bot for ETH, BSC, AVAX, MATIC, FTM, Harmony, Metis, CRONOS, KCC, VELAS, Pulsechain, Venom, Kaikas, Milkomeda, Solana and more, can Swap, Sniping and Arbitrage
 
 # Set-Up
