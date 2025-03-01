@@ -25,7 +25,7 @@ A professional trading platform for large-scale transactions on DEX in EVM netwo
 
 - 📊 Professional analytics: monitoring TVL, gas, PnL and whale activity.
 
-= 🌐 Multichain: Swaps via Thorchain, liquidity aggregation on Uniswap, Curve, 1inch.
+- 🌐 Multichain: Swaps via Thorchain, liquidity aggregation on Uniswap, Curve, 1inch.
 
 # For whom:
 - **Traders:** instant execution, snipe listings (Dexscreener, Pinksale), trailing stop-loss.
