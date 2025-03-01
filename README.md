@@ -28,7 +28,7 @@ A professional trading platform for large-scale transactions on DEX in EVM netwo
 - 🌐 Multichain: Swaps via Thorchain, liquidity aggregation on Uniswap, Curve, 1inch.
 
 # For whom:
-- **Traders:** instant execution, snipe listings (Dexscreener, Pinksale), trailing stop-loss.
+- **Traders:** instant execution, scam protection, snipe listings (Dexscreener, Pinksale), trailing stop-loss.
 - **Hedge funds and DAOs:** RWA allocation, KYC transactions, multi-sig wallets (Gnosis Safe), tax records.
 - **Stakers:** auto-restocking, liquidity farming, NFT collateral via Aave.
 
