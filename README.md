@@ -29,7 +29,7 @@ A professional trading platform for large-scale transactions on DEX in EVM netwo
 
 **Compatibility:** EVM + Solana, L2 (Arbitrum, zkSync), cross-chain swaps.
   
-## Download free for [ ```Windows`` ](https://selenium-finance.gitbook.io/selenium-fi/download-link/windows) / [ ```MAC OS``` ](https://selenium-finance.gitbook.io/selenium-fi/download-link/mac-os)
+## Download free for [```Windows```](https://selenium-finance.gitbook.io/selenium-fi/download-link/windows) / [```MAC OS```](https://selenium-finance.gitbook.io/selenium-fi/download-link/mac-os)
 
 - Oracles: Chainlink, Pyth.
 
