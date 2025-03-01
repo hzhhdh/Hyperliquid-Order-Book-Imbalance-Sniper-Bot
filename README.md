@@ -1,7 +1,7 @@
 <p align="center"><img width="720" height="463" src="images/inter.jpg" alt="Defi Bot interface" /></p>
 
 # DEX Trading Tool
->A cross-chain trading tool to automate steaking, arbitrage and investment in RWA (Real World Assets). Looking for a high-yield DeFi bot with liquid steaking or Ethereum-Solana cross-chain arbitrage? Chimera combines the trends of 2024: yield optimization via EigenLayer, private swaps with Aztec zk-proof and allocation to tokenized bonds. Ethereum, Solana, Cosmos support. Zero AI, algorithmic strategies only. Start with APY up to 35% on staking and RWAs. TVL, gas and risk monitoring in one dashboard. For traders and institutions. Integration with Lido, MakerDAO, Aave. Reduce risk, maximize returns.
+>A cross-chain trading tool to automate staking, arbitrage and investment in RWA (Real World Assets). Looking for a high-yield DeFi bot with liquid steaking or Ethereum-Solana cross-chain arbitrage? Chimera combines the trends of 2024: yield optimization via EigenLayer, private swaps with Aztec zk-proof and allocation to tokenized bonds. Ethereum, Solana, Cosmos support. Zero AI, algorithmic strategies only. Start with APY up to 35% on staking and RWAs. TVL, gas and risk monitoring in one dashboard. For traders and institutions. Integration with Lido, MakerDAO, Aave. Reduce risk, maximize returns.
 
 A professional trading platform for large-scale transactions on DEX in EVM networks. Features include automatic order splitting (Smart Split), integration with Uniswap, Sushiswap, Curve, risk management with Chainlink and Pyth, Dark Pool for confidentiality, multisig wallets, cross-chain swaps, and professional analytics. Gas optimization, mempool monitoring, and scam protection ensure safe and fast order execution in DeFi
 
