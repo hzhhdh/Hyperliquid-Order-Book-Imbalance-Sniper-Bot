@@ -1,7 +1,7 @@
 # Liquidity Guardian Suite: Automated Liquidity Management & Security for Solana Projects | DeFi Tools
 > Automation of liquidity management, protection from hackers and analytics for token projects on Solana. Increase returns, reduce risks and optimize your pools. A white labeled solution for your brand.
 
-# Client Liquidity Guaridan Suite for Windows/macOS.
+## Client Liquidity Guaridan Suite for Windows/macOS.
 ### Write https://t.me/ZeronodeX for get access (available free trial)
 
 ## Liquidity Guardian Suite
