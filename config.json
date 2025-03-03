@@ -1,0 +1,25 @@
+{
+  "solanaRpcUrl": "https://api.mainnet-beta.solana.com",
+  "dexPools": [
+    {
+      "name": "Raydium",
+      "address": "RAYDIUM_POOL_ADDRESS",
+      "weight": 60
+    },
+    {
+      "name": "Orca",
+      "address": "ORCA_POOL_ADDRESS",
+      "weight": 40
+    }
+  ],
+  "rebalanceThreshold": 0.05, // 5% price difference
+  "security": {
+    "suspiciousAmountThreshold": 10000, // $10k
+    "telegramBotToken": "YOUR_TELEGRAM_BOT_TOKEN",
+    "telegramChatId": "YOUR_TELEGRAM_CHAT_ID"
+  },
+  "analytics": {
+    "birdeyeApiKey": "YOUR_BIRDEYE_API_KEY",
+    "dexScreenerApiKey": "YOUR_DEXSCREENER_API_KEY"
+  }
+}
