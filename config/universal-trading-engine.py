@@ -6,7 +6,7 @@ class MultiLeverageTrader:
         self._start_safety_monitor(order["id"], strategy["exit_rules"])  
 
     def _get_leverage(self, coin: str, rules: dict) -> int:  
-        """Применяет правила выбора плеча"""  
+        """Applies shoulder selection rules"""  
         if rules["type"] == "volatility_based":  
             volatility = VolatilityOracle.get(coin, "1h")  
             return AdaptiveLeverageManager().calculate_leverage(coin, volatility)  
@@ -27,4 +27,4 @@ class MultiLeverageTrader:
                 }  
             )  
         except MarginError:  
-            self._auto_add_collateral(coin, amount * 0.1)  # Автопополнение маржи  
+            self._auto_add_collateral(coin, amount * 0.1)  # Auto margin replenishment
