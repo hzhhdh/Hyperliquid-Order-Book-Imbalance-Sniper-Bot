@@ -6,6 +6,10 @@ DeFi Algo Trading Bot is an open-source anti-liquidation bot for the decentraliz
 ### [Documentation](https://selenium-finance.gitbook.io/mev-fortress-documentation)
 ### **Install** [Windows](https://selenium-finance.gitbook.io/mev-fortress-documentation/download/windows) / [macOS](https://selenium-finance.gitbook.io/mev-fortress-documentation/download/macos)
 
+[![License](https://img.shields.io/badge/License-MIT-green)](https://github.com/yourusername/defi-algo-bot)
+[![Python](https://img.shields.io/badge/Python-3.10%2B-blue)](https://www.python.org)
+[![Web3](https://img.shields.io/badge/Web3.py-6.0+-brightgreen)](https://web3py.readthedocs.io)
+
 # Key Features
 1. Dynamic Collateral Rebalancer
 
