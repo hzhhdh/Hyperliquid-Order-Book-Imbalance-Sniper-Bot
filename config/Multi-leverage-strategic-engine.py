@@ -22,5 +22,5 @@ class AdaptiveLeverageManager:
         return [  
             m["symbol"] for m in markets  
             if m["maxLeverage"] >= self.min_leverage  
-            and m["marginType"] == "isolated"  # Для безопасности  
+            and m["marginType"] == "isolated"  # For safety's sake  
         ]  
