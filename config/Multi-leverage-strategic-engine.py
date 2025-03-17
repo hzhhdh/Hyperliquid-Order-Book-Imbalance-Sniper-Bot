@@ -24,3 +24,12 @@ class AdaptiveLeverageManager:
             if m["maxLeverage"] >= self.min_leverage  
             and m["marginType"] == "isolated"  # For safety's sake  
         ]  
+        
+class MultiLeverageTrader:  
+    def execute_trade(self, symbol: str, strategy: dict):  
+        if strategy["type"] == "twap":  
+            TWAPExecutor().execute(symbol, strategy["side"], strategy["amount"])  
+        elif strategy["type"] == "vwap":  
+            VWAPExecutor().execute(symbol, strategy["side"], strategy["amount"])  
+        else:  
+            # ... previous logic
