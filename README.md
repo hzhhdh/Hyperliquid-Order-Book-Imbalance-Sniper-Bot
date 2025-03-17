@@ -56,3 +56,7 @@ DeFi Algo Trading Bot is an open-source anti-liquidation bot for the decentraliz
 Select DeFi protocols for collateral: Aave, Compound, Hyperliquid LP.
 
 Enable flash loan hedging via CEX (requires Binance/Bybit API keys).
+
+# Key inquiries
+hyperliquid 100x leverage bot github, auto-trading high leverage crypto, multi-exchange emergency hedge bot,
+volatility-based leverage adjustment, institutional crypto trading framework, hyperliquid anti-liquidation bot github, defi margin trading automation, flash loan hedging bot, open-source crypto risk management, aave compound collateral rebalance, hyperliquid, anti-liquidation, defi-trading-bot, leverage-automation, perpetual-contracts, flash-loan-hedging, margin-trading, decentralized-exchange, risk-management, open-source-crypto-bot, hyperliquid anti-liquidation bot, defi margin trading automation, perpetual contracts risk management, cross-protocol collateral bot github, flash loan hedging hyperliquid, crypto liquidation prevention bot, dynamic leverage adjustment dex, volatility-based trading bot, hyperliquid stop-loss optimizer, automated defi hedging strategies, leverage trading on hyperliquid, how to avoid liquidation in defi, best tools for perpetual traders, hyperliquid api integration example, open-source crypto trading bots
