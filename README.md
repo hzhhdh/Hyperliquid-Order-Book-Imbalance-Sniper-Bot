@@ -10,7 +10,7 @@ DeFi Algo Trading Bot is an open-source anti-liquidation bot for the decentraliz
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue)](https://www.python.org)
 [![Web3](https://img.shields.io/badge/Web3.py-6.0+-brightgreen)](https://web3py.readthedocs.io)
 
-# Key Features
+## Key Features
 1. Dynamic Collateral Rebalancer
 
 - Auto-shifts collateral from stablecoin pools (e.g., Hyperliquid LP) to margin accounts during liquidation threats.
@@ -35,7 +35,7 @@ DeFi Algo Trading Bot is an open-source anti-liquidation bot for the decentraliz
 
 - Monitors collateral in DeFi pools (Uniswap, Curve) and auto-withdraws liquidity during critical risks.
 
-# Benefits
+## Benefits
 - For $100K+ Traders:
 
   - Maintain positions even during 15-20% market drops via collateral rebalancing.
@@ -46,7 +46,149 @@ DeFi Algo Trading Bot is an open-source anti-liquidation bot for the decentraliz
   - Ready-to-use scripts for Hyperliquid API, Aave, LayerZero.
   - Code examples using Pyth Network and Chainlink oracles.
 
- # Configuration
+## Config structure
+- General settings
+```
+"general": {  
+  "enable_live_trading": false,  // Real trading mode (true/false) 
+  "demo_mode": true,            // Test mode (without real deals)  
+  "base_currency": "USDC",      // Underlying asset (USDC, USDT, DAI)  
+  "allowed_coins": ["BTC", "ETH", "SOL", "...", "..."],  // Coins for trade  
+  "max_parallel_positions": 5   // Max. number of simultaneous positions 
+}
+```
+- Leverage management
+```
+"leverage": {  
+  "min_leverage": 20,           // Minimum leverage (20-100x)  
+  "max_leverage": 100,          // Maximum shoulder  
+  "volatility_thresholds": {    // Volatility thresholds for leverage correction  
+    "low": 5.0,                 // <5% → 100x  
+    "medium": 10.0,             // 5-10% → 20% decrease  
+    "high": 15.0                // >15% → min_leverage  
+  },  
+  "leverage_adjust_interval": 60  // Correction interval (in seconds) 
+}  
+```
+- Criteria for opening/closing positions
+```
+"positions": {  
+  "entry_conditions": {         // Conditions for entering a position  
+    "rsi": {                    // RSI (period / threshold)  
+      "timeframe": "4h",  
+      "overbought": 70,  
+      "oversold": 30  
+    },  
+    "volume_spike": {           // Sharp increase in volume  
+      "multiplier": 3.0,        // Increase in volume by X times  
+      "time_window": "1h"  
+    },  
+    "funding_rate": {           // Financing rate  
+      "max_long": -0.02,        // Max. for long  
+      "min_short": 0.01         // Min. for short  
+    }  
+  },  
+  "exit_conditions": {  
+    "stop_loss": {              // Trailing Stop 
+      "activation": 5.0,        // Activation at 5% drop  
+      "step": 1.0               // Trailing pitch (1%)  
+    },  
+    "take_profit": 15.0,        // Profit fixation at 15% 
+    "panic_close": {            // Emergency closure 
+      "liquidation_risk": 1.5,  // Close at 1.5% before liquidation 
+      "max_daily_loss": 10.0    // Max. daily loss (10%) 
+    }  
+  }  
+}
+```
+- Collateral management
+```
+"collateral": {  
+  "rebalance_interval": 300,    // Rebalancing interval (sec)  
+  "min_ratio": 150.0,           // Min. collateral ratio (150%)  
+  "allowed_protocols": ["aave", "compound", "hyperliquid_lp", "...", "...", ],  
+  "auto_withdraw": {            // Autocall in case of threat of liquidation  
+    "enabled": true,  
+    "percent": 30.0             // % withdrawal deposit 
+  }  
+}
+```
+- Hedging
+```
+"hedging": {  
+  "flash_loan_providers": ["aave", "dydx", "...", "..." ],  
+  "max_loan_per_tx": 50000,     // Max. amount of flash-loan ($)  
+  "cex_hedge": {                // CEX Hedge  
+    "enabled": true,  
+    "exchanges": ["binance", "bybit", "...", "...", ],  
+    "max_hedge_ratio": 50.0     // % of the hedge position  
+  }  
+}  
+```
+- TWAP/VWAP Strategies
+```
+"twap_vwap": {  
+  "twap": {  
+    "default_slices": 12,       // Number of slices  
+    "max_slippage": 0.2,        // Max. slip (%)  
+    "time_intervals": [300, 600]// Intervals (5/10 min) 
+  },  
+  "vwap": {  
+    "volume_threshold": 5.0,    // 5% daily volume  
+    "size_adjustment": "dynamic"// dynamic/static cut size  
+  }  
+}
+```
+- Notifications and monitoring
+```
+"notifications": {  
+  "telegram": {  
+    "enabled": true,  
+    "chat_id": "123456",  
+    "alerts": ["liquidatio n_risk", "hedge_executed"]  
+  },  
+  "logs": {  
+    "path": "/var/log/hyperguard",  
+    "level": "debug"            // debug, info, error  
+  }  
+}  
+```
+- Performance and commissions
+```
+"performance": {  
+  "rpc_url": "https://arb1.arbitrum.io/rpc",  
+  "gas_limit": 300000,          // Gas limit for transactions 
+  "max_priority_fee": 2.0,      // Max. priority commission (Gwei)  
+  "max_slippage": 0.5           // Total max. slip (%)  
+}
+```
+- Integration with oracles
+```
+"oracles": {  
+  "price_feeds": {  
+    "primary": "pyth",          // Pyth, Chainlink, Band  
+    "fallback": "chainlink"  
+  },  
+  "volatility_feeds": {  
+    "source": "tradingview",    // TradingView, Deribit  
+    "update_interval": 60  
+  }  
+}
+```
+
+### Setup tips
+1. For high leverage (50x+):
+    - Reduce ```volatility_thresholds.high``` to 10%.
+    - Enable ```hedging.cex_hedge.enabled```.
+
+2. For conservative strategies:
+    - Set ```max_daily_loss``` to 5%.
+    - Use ```twap_vwap.twap.default_slices```: 24.
+
+3. With low liquidity:
+   - Increase ```max_slippage``` to 1-2%.
+
+### Configuration
  Set risk parameters in ```risk_config.json```:
 
 - ```max_leverage```: 20x (for perpetual contracts).
