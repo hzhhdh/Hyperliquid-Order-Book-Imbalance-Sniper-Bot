@@ -1,7 +1,7 @@
 class TWAPExecutor:  
     def __init__(self):  
-        self.total_duration = 3600  # 1 час (по умолчанию)  
-        self.slices = 12            # 12 интервалов по 5 минут  
+        self.total_duration = 3600  # 1 hour (default)  
+        self.slices = 12            # 12 intervals of 5 minutes  
 
     def execute(self, symbol: str, side: str, total_amount: float):  
         slice_size = total_amount / self.slices  
