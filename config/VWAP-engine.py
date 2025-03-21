@@ -1,7 +1,7 @@
 class VWAPExecutor:  
     def __init__(self):  
         self.volume_threshold = 0.05  # 5% daily volume  
-        self.max_slippage = 0.1       # 0.1% макс. проскальзывание  
+        self.max_slippage = 0.1       # 0.1% max. slip  
 
     def execute(self, symbol: str, side: str, amount: float):  
         daily_volume = VolumeOracle.get_24h_volume(symbol)  
