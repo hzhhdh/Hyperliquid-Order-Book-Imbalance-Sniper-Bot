@@ -1,4 +1,5 @@
 # DeFi Trading Bot: Anti-Liquidation, High-Leverage Trading Bot for DeFi & CEX | Cross-Protocol Arbitrage, MEV Protection & Institutional Tools
+<p align="center"><img width="820" height="494" src="dashboard/ui.jpg" alt="Bot interface" /></p>
 
 DeFi Trading Bot is the ultimate DeFi and CEX trading bot for traders seeking to dominate high-leverage markets while avoiding liquidation risks. Built for Hyperliquid, dYdX, GMX, Binance, Bybit, and 20+ other platforms, this open-source, audited bot combines AI-driven risk management, cross-protocol strategies, and MEV-resistant execution to protect and grow your crypto portfolio.
 
