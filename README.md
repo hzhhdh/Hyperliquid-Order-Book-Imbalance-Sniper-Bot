@@ -1,6 +1,6 @@
-# Anti-Liquidation Bot for Hyperliquid: DeFi Margin Trading, Cross-Protocol Hedging & Dynamic Collateral Management
+# DeFi Trading Bot: Anti-Liquidation, High-Leverage Trading Bot for DeFi & CEX | Cross-Protocol Arbitrage, MEV Protection & Institutional Tools
 
-DeFi Algo Trading Bot is an open-source anti-liquidation bot for the decentralized exchange Hyperliquid, designed for traders and investors using high leverage (up to 20x-100x) and perpetual contracts. The bot automatically rebalances collateral across DeFi protocols and margin accounts, reducing liquidation risk by 90% without closing positions. It integrates flash loan hedging via CEX (Binance, Bybit) and dynamic leverage adjustments based on market volatility.
+DeFi Trading Bot is the ultimate DeFi and CEX trading bot for traders seeking to dominate high-leverage markets while avoiding liquidation risks. Built for Hyperliquid, dYdX, GMX, Binance, Bybit, and 20+ other platforms, this open-source, audited bot combines AI-driven risk management, cross-protocol strategies, and MEV-resistant execution to protect and grow your crypto portfolio.
 
 # Documentation + Install 
 ### [Documentation](https://selenium-finance.gitbook.io/mev-fortress-documentation)
@@ -34,6 +34,7 @@ DeFi Algo Trading Bot is an open-source anti-liquidation bot for the decentraliz
 ## 📊 Performance Metrics
 - Liquidation Survival- 98.2%
 - Avg. APR (2024)- 40.7%
+- <0.5% Slippage on orders up to $100k.
 - Max Drawdown- -9.8%
 
 ## 🌐 DEX Integrations
