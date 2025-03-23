@@ -230,6 +230,226 @@ DeFi Trading Bot is the ultimate DeFi and CEX trading bot for traders seeking to
   - DEX (Hyperliquid): 99.98%
   - CEX (Binance): 99.95%
 
+## 🛡️ Dynamic Liquidation Protection
+### 1. Collateral Rebalancing
+
+Purpose: Automatically reallocates collateral across protocols to avoid margin calls.
+Mechanism:
+
+    - Monitors Loan-to-Value (LTV) ratios on Aave, Compound, and Hyperliquid.
+
+    - Triggers rebalancing when LTV exceeds user-defined thresholds.
+
+Configuration:
+```
+"collateral_rebalancing": {  
+  "enabled": true,  
+  "protocols": ["aave", "compound", "hyperliquid"],  
+  "min_safety_ratio": 150,  // Minimum collateral ratio (150% = safe zone)  
+  "check_interval": 300,    // Check every 5 minutes (in seconds)  
+  "max_gas_fee": 50         // Max gas fee (in Gwei) for transactions  
+}
+```
+
+Notes:
+
+    - Rebalancing prioritizes moving funds from low-yield to high-yield protocols.
+
+    - Avoids protocols with pending governance votes or security alerts.
+
+### 2. Flash Loan Hedging
+
+Purpose: Open offsetting positions on CEX during liquidation risks.
+Workflow:
+
+    - Borrows funds via Aave/dYdX flash loans.
+
+    - Opens a short/long on Binance/Bybit.
+
+    - Repays the loan after price stabilizes.
+
+Configuration:
+```
+
+"flash_loan_hedging": {  
+  "enabled": true,  
+  "providers": ["aave", "dydx"],  
+  "cex": ["binance", "bybit"],  
+  "max_loan_percent": 30,   // Max % of collateral to borrow  
+  "profit_target": 2.0      // Close hedge when profit reaches 2%  
+}  
+```
+
+Security:
+
+    - Uses time-locked contracts to prevent MEV attacks.
+
+    - Requires API keys with no withdrawal permissions on CEX.
+
+### 3. Volatility-Based Leverage
+
+Purpose: Adjusts leverage (20x–100x) based on market volatility.
+Data Sources:
+
+    - Chainlink: 24h price volatility.
+
+    - Pyth Network: Real-time price feeds.
+
+Configuration:
+```
+
+"leverage": {  
+  "min": 20,  
+  "max": 100,  
+  "volatility_thresholds": {  
+    "low": 5.0,    // 5% volatility → 100x leverage  
+    "medium": 10.0, // 10% → 50x  
+    "high": 15.0    // 15% → 20x  
+  },  
+  "adjust_interval": 60  // Recalculate every 60 seconds  
+}
+```
+
+Formula:
+```
+leverage = max_leverage - (volatility - low_threshold) * leverage_step
+``` 
+
+## 📈 Algorithmic Trading Strategies
+
+### 1. TWAP/VWAP Execution
+
+- TWAP (Time-Weighted Average Price):
+
+    - Splits orders into equal slices over time.
+    - VWAP (Volume-Weighted Average Price):
+
+    - Adjusts order size based on real-time volume.
+
+Configuration:
+```
+"twap_vwap": {  
+  "strategy": "vwap",       // Options: "twap", "vwap", "hybrid"  
+  "order_duration": 3600,   // Total execution time (1 hour)  
+  "slices": 12,             // Split into 12 orders (every 5 mins)  
+  "max_slippage": 0.3,      // Max allowed slippage (%)  
+  "volume_source": "dex"    // "dex" (Hyperliquid) or "cex" (Binance)  
+}
+```
+
+- Use Case:
+
+    - Reduces market impact for orders >$100k.
+
+### 2. Liquidation Arbitrage
+
+Purpose: Profit from others’ liquidations by front-running MEV bots.
+Workflow:
+
+    - Scans for pending liquidations on Hyperliquid/dYdX.
+
+    - Places buy orders below liquidation price.
+
+    - Sells immediately after liquidation.
+
+Configuration:
+```
+"liquidation_arbitrage": {  
+  "enabled": true,  
+  "min_profit": 1.5,        // Min profit % per trade  
+  "max_volume": 10.0,       // Max % of daily volume to trade  
+  "blacklist": ["MEME"]     // Avoid illiquid assets  
+}  
+```
+
+- Ethical Note:
+
+    - Bypasses dark pools using Flashbots RPC for fair ordering.
+
+### 3. DCA Bots
+
+Purpose: Dollar-cost average into positions during dips.
+
+Configuration:
+```
+"dca": {  
+  "enabled": true,  
+  "assets": ["BTC", "ETH"],  
+  "interval": "4h",         // Buy every 4 hours  
+  "dip_threshold": 10.0,    // Trigger on 10% price drop (24h)  
+  "amount_per_trade": 100   // USD amount per DCA  
+}  
+```
+
+- Advanced:
+
+    - Combines with volatility data to skip buys during high volatility.
+
+## 🏦 Institutional Tools
+
+### 1. MPC Wallets
+
+Integration:
+
+    - Fireblocks: API key + whitelisted IPs.
+
+    - Gnosis Safe: Multi-sig transaction approvals.
+
+Configuration:
+```
+"wallets": {  
+  "mpc_provider": "fireblocks",  
+  "vault_ids": ["123", "456"],  
+  "min_signers": 2,         // Require 2/3 signatures  
+  "auto_sweep": true        // Auto-send profits to cold wallet  
+}  
+```
+
+### 2. Cross-Protocol Dashboard
+
+- Features:
+
+    - Track positions across Hyperliquid, dYdX, and GMX.
+
+    - Real-time PnL, funding rates, and liquidation risks.
+
+Configuration:
+```
+"dashboard": {  
+  "refresh_interval": 10,   // Update every 10 seconds  
+  "export_formats": ["csv", "json"],  
+  "alerts": ["liquidation", "margin_call"]  
+}  
+```
+
+API Access:
+```
+GET /api/v1/positions → Returns all open positions.  
+```
+
+### 3. Tax Reports
+
+- Supported Formats:
+
+    - Koinly: CSV with columns: Date, Amount, Currency, Type.
+
+    - CoinTracker: Same as Koinly + custom tags.
+
+Configuration:
+
+```
+"tax": {  
+  "auto_export": true,  
+  "format": "koinly",  
+  "fifo_method": true,      // First-In-First-Out accounting  
+  "include_cex": true       // Binance/Bybit trades  
+}  
+```
+- Note:
+
+    - Generates reports monthly in /reports/tax_YYYY_MM.csv.
+
+
 ## Benefits
 - For $100K+ Traders:
 
