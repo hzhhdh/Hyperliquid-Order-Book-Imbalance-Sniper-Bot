@@ -38,6 +38,8 @@ DeFi Trading Bot is the ultimate DeFi and CEX trading bot for traders seeking to
 - <0.5% Slippage on orders up to $100k.
 - Max Drawdown- -9.8%
 
+<p align="center"><img width="975" height="409" src="set/screen defitrading bot 1.jpg" alt="Bot interface" /></p>
+
 ## 🌐 DEX Integrations
 ### 1. Hyperliquid	
      - 100x leverage on perps
