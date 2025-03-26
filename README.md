@@ -28,12 +28,17 @@ DeFi Trading Bot is the ultimate DeFi and CEX trading bot for traders seeking to
 
 <p align="center"><img width="975" height="409" src="set/screen defitrading bot 1.jpg" alt="Bot interface" /></p>
 ## ⛓️ **Blockchain Integration**  
-- | **Protocol**      | **Functionality**                                                                 |  
-- |--------------------|-----------------------------------------------------------------------------------|  
-- | **Hyperliquid**    | Trade perpetuals with 100x leverage on Arbitrum L1.                               |  
-- | **Arbitrum**       | Low-gas execution for hedging and collateral management.                          |  
-- | **Aave/Compound**  | Flash loans for instant hedging and capital efficiency.                           |  
-- | **GMX/dYdX**       | Cross-margin strategies and liquidity aggregation.                                |  
+| **Protocol**       | **Functionality**                                                                 |  
+
+|--------------------|-----------------------------------------------------------------------------------|  
+
+| **Hyperliquid**    | Trade perpetuals with 100x leverage on Arbitrum L1.                               | 
+ 
+| **Arbitrum**       | Low-gas execution for hedging and collateral management.                          |  
+
+| **Aave/Compound**  | Flash loans for instant hedging and capital efficiency.                           |  
+
+| **GMX/dYdX**       | Cross-margin strategies and liquidity aggregation.                                |  
 
 ---
 
