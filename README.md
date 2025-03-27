@@ -17,7 +17,7 @@ DeFi Trading Bot is the ultimate DeFi and CEX trading bot for traders seeking to
 - **🛡️ Dynamic Liquidation Protection**: Prevents liquidation even if markets crash 30%.
 - **⚡ Adaptive Leverage (20x–100x)**: Maximizes profits with smart leverage (20x–100x).    
 - **📈 TWAP/VWAP Execution**: Splits large orders to minimize slippage.  
-- **🔀 Cross-Exchange Arbitrage**: Exploits price gaps between DEX (Hyperliquid) and CEX (Binance).
+- **🔀 Cross-Exchange Arbitrage**: Exploits price gaps between DEX and CEX.
 - **⚡Instant Trading**: Executes trades 10x faster than manual trading.
 - **🤖 MEV-Resistant Strategies**: Front-run liquidation bots and dark pools.  
 
