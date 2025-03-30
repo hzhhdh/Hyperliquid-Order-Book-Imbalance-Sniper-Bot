@@ -106,10 +106,12 @@ DeFi Terminal is a cutting-edge trading and portfolio management tool built for 
 **1. Global Limits:**
 - Max Exposure: 30% of capital in high-risk assets.
 - Stop-Loss: -15% of NAV (net portfolio value).
+
 **2. Correlation Rules:**
 - In "Risk Matrix" set:
   - BTC/ETH: Max correlation 0.8.
   - ETH/Stablecoins: Minimum 20% of the portfolio.
+
 **3. Crash simulator:**
 - Run Stress Test → Black Swan Scenario:
   - ETH drop by 40% → check the resilience of strategies.
