@@ -29,3 +29,87 @@ DeFi Terminal is a cutting-edge trading and portfolio management tool built for 
 - Avg. APR (2025)- 210.7%
 - <0.5% Slippage on orders up to $100k.
 - Max Drawdown- -9.8%
+
+## A step-by-step guide to using the DeFi Terminal
+### 🔑 Step 1: Connecting your wallet
+**1. Select a wallet type:**
+- From the home screen, tap Connect Wallet.
+- Select a secure option:
+  - Ledger/Trezor (recommended for large amounts).
+  - MetaMask (for quick access).
+  - Enter private key/seed phrase (for trusted devices only).
+
+**2. Confirm the connection:**
+    - For hardware wallets: connect the device, confirm the address on the screen.
+    - For MetaMask: authorize through the extension.
+
+**3. Configure access:**
+    - Set "Read-Only" mode to view balances.
+    - For trading, activate "Full Access" with 2FA (Google Authenticator).
+
+> ⚠️ Important: Never enter private keys on third-party sites.
+
+### ⚙️ Step 2: Basic profile setup
+**1. Risk Profile:**
+- Under Settings → Risk Profile, select:
+  - Conservative: Max risk 10%, focus on stablecoins.
+  - Moderate: 20-30% risk, mix of DeFi and blue chips (ETH, WBTC).
+  - Aggressive: 40%+ risk, participation in presales and leveraged farming.
+
+**2. Add tokens to your portfolio**
+- In the left panel click "+ Add Token", enter contracts:
+  - Basic: ETH, WBTC, USDC.
+  - Exotics: SNX, UNI, AAVE (no more than 10% of the portfolio).
+
+**3. Customize notifications:**
+- In "Alerts" set triggers:
+  - ETH price drop > 15% in a day.
+  - APR in pools < 20%.
+
+### 📊 Step 3: Interface Overview
+**1. Left panel:**
+    - Balances: Real-time portfolio value, asset allocation.
+    - Tokens: Staking management, liquidity management.
+
+**2. Center area:**
+    - Strategies: Arbitrage, Staking, Farming tabs.
+    - Charts: ETH/USD price + onchain metrics (volumes, funding rates).
+
+**3. Right panel:**
+    - Risk Management: Exposure, asset correlation.
+    - Alerts: Critical events (pool hacks, sharp volatility).
+
+### ⚡ Step 4: Customizing Strategies
+**A. DEX/CEX Arbitrage:**
+1. Go to Arbitrage → New Strategy.
+2. Set parameters:
+  - DEX: Uniswap v3 (0.3% fee).
+  - CEX: Binance Futures.
+  - Min Spread: 1.5%.
+  - Max Trade Size: $50,000.
+3. Enable "MEV Protection" and "Auto-Gas Adjust".
+
+**B. Leverage Staking:**
+1. In "Staking", select the protocol (Aave v3 or Lido).
+2. Specify:
+   - Collateral: ETH (60% of deposit).
+   - Leverage: 3x.
+   - Auto-Repay Threshold: LTV > 65%.
+
+**C. Farming in exclusive pools:**
+1. In Farming, connect access via "VIP Pass" (KYC required).
+2. Select pools:
+   - Curve 3pool (APR 28%, $200k limit).
+   - Yearn ETH (APR 19%, auto-compounding).
+
+### 🛡️ Step 5: Risk Management
+**1. Global Limits:**
+- Max Exposure: 30% of capital in high-risk assets.
+- Stop-Loss: -15% of NAV (net portfolio value).
+**2. Correlation Rules:**
+- In "Risk Matrix" set:
+  - BTC/ETH: Max correlation 0.8.
+  - ETH/Stablecoins: Minimum 20% of the portfolio.
+**3. Crash simulator:**
+- Run Stress Test → Black Swan Scenario:
+  - ETH drop by 40% → check the resilience of strategies.
