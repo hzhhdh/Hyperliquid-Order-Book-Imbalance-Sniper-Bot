@@ -1,5 +1,5 @@
 # DeFi Terminal - Advanced DeFi Trading & Portfolio Management
-<p align="center"><img width="820" height="494" src="dashboard/ui.jpg" alt="Bot interface" /></p>
+<p align="center"><img width="820" height="494" src="dashboard/screen.jpg" alt="Bot interface" /></p>
 
 Professional DeFi trading software for $1M+ portfolios. Leverage staking, arbitrage DEX/CEX, and yield farming with advanced risk management and security. Supports Ethereum, BSC, Polygon, Optimism, AVAX and more(just add in settings).
 > A professional-grade DeFi platform for crypto investors managing $100k+. Features leveraged staking, cross-exchange arbitrage, yield farming, and real-time risk analytics with institutional security
