@@ -115,3 +115,49 @@ DeFi Terminal is a cutting-edge trading and portfolio management tool built for 
 **3. Crash simulator:**
 - Run Stress Test → Black Swan Scenario:
   - ETH drop by 40% → check the resilience of strategies.
+
+## Integrated DeFi Protocols & DEXs
+Supported Chains: Ethereum, BSC, Polygon, Arbitrum, Optimism, StarkNet, Layer-2 and more
+
+### 1. Decentralized Exchanges (DEXs)
+- Uniswap v3 (Concentrated Liquidity, 0.01-1% Fees)
+- PancakeSwap (Farms, IFO Launches, NFT Marketplace)
+- Curve Finance (Stablecoin/Volatile Pools, veCRV)
+- Quickswap (Layer 2 Scaling, Dual Farming)
+- Balancer v2 (Smart Order Routing, Custom Pools)
+- Trader Joe (Lending + DEX (JOE rewards))
+
+### 2. Lending & Borrowing
+- Aave v3 (Isolation Mode, eMode)
+- Compound v3 (Collateral-Free Borrowing)
+- Alpaca Finance (Leveraged Yield Farming)
+- Benqi (Native AVAX Integration)
+
+### 3. Yield Aggregators
+- Yearn Finance (Stablecoin Vaults (8-15% APY))
+- Convex Finance (CRV/cvxCRV Boosting)
+- Beefy Finance (Auto-Compounding BSC/Polygon)
+- Stella (Delta-Neutral Strategies)
+
+### 4. Derivatives & Perpetuals
+- dYdX (Isolated Margin, 20x Leverage)
+- GMX (Spot/Perps, GLP Index Pool)
+- Synthetix (Synthetic Assets (sBTC, sETH))
+- Gains Network (Forex/Stock CFDs)  
+
+### 5. Cross-Chain Infrastructure
+- LayerZero (Omnichain Messaging)
+- Wormhole (Asset Bridging)
+- Axelar (Cross-Chain Smart Contracts)
+
+### 6. Exclusive Access Pools
+- Yearn VIP (500k+ TVL)
+- Oxygen Managed (KYC + 100k USD Deposit)
+- Maple Finance (Institutional Borrowers Only)
+- Ribbon Earn (rETHN Vaults (Permissioned))
+
+### 7. Oracle & Analytics
+- Chainlink (Price Feeds)
+- The Graph (On-Chain Indexing)
+- DefiLlama (TVL/Risk Metrics)
+- Dune Analytics (Custom Dashboards)
