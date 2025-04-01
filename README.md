@@ -1,12 +1,9 @@
 # DeFi Terminal - Advanced DeFi Trading & Portfolio Management
 <p align="center"><img width="820" height="494" src="dashboard/screen.jpg" alt="Bot interface" /></p>
 
-Professional DeFi trading software for $1M+ portfolios. Leverage staking, arbitrage DEX/CEX, and yield farming with advanced risk management and security. Supports Ethereum, BSC, Polygon, Optimism, AVAX and more(just add in settings).
-> A professional-grade DeFi platform for crypto investors managing $100k+. Features leveraged staking, cross-exchange arbitrage, yield farming, and real-time risk analytics with institutional security
+Precision-engineered for hedge funds, family offices, and accredited investors deploying $100k+ across DeFi ecosystems. Master capital-efficient strategies like leveraged staking (5x-100x), cross-protocol arbitrage (Uniswap Institutional, dYdX, PancakeSwap v4), and whitelisted yield vaults via Aave Pro, Compound Treasury, and Yearn VIP.
 
-DeFi Terminal is a cutting-edge trading and portfolio management tool built for cryptocurrency investors handling over $1M in capital. Integrate advanced DeFi strategies like leveraged staking (up to 5x-100x), DEX/CEX arbitrage, and exclusive yield farming pools with real-time risk management and top-tier security.
-
-Ideal for: Crypto hedge funds, family offices, and accredited investors deploying capital across DeFi protocols like Aave Institutional, Compound Treasury, and Yearn VIP vaults.
+Seamlessly orchestrate capital across Ethereum, Solana, Arbitrum, Base, and emerging L1/L2 networks with institutional-grade security (multi-sig custody, SOC2 compliance) and real-time exposure analytics. Optimize for protocols like EigenLayer restaking, MakerDAO RWA pools, and Synthetix perpetuals with enterprise-grade slippage control and cross-chain rebalancing.
 
 # Documentation + Download
 ## [Documentation](https://selenium-finance.gitbook.io/mev-fortress-documentation)
