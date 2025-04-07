@@ -24,15 +24,18 @@ DeFi Nexus Bot delivers robust, rule‑based trading strategies, dynamic risk ma
   - Implements risk‑limiting rules such as fixed stop‑loss orders, trailing stops, and position size limits.
   - Activates capital protection modes—like shifting assets to stablecoins or alternative positions—when market volatility or downside trends are detected.
   - Monitors exposure and automatically rebalances the portfolio according to predefined risk tolerance levels.
+<p align="center"><img width="900" height="600" src="nexus bot/risk management.png" alt="Bot interface" /></p>
 
 - **⚡ Strategy Engine**: Dynamic stop-loss, portfolio exposure limits, and asset correlation tracking.
   - Houses a library of deterministic, rule‑based trading strategies.
   - Includes strategies for trend following, mean reversion, arbitrage, and hedging.
   - Allows users to “atomize” complex strategies into independent modules (entry, exit, sizing, hedging) that can be mixed and matched.
+<p align="center"><img width="900" height="600" src="nexus bot/strategy.png" alt="Bot interface" /></p>
 
 - **📈 Multi‑Network Connector**:
   - Integrates with multiple DEX APIs (e.g., Uniswap, SushiSwap, PancakeSwap) on Ethereum, Binance Smart Chain, Polygon, etc.
   - Provides a unified interface to fetch market data and execute trades.
+<p align="center"><img width="900" height="600" src="nexus bot/networks.png" alt="Bot interface" /></p>
 
 - **🔀 Backtesting and Optimization Engine**:
   - Provides a local simulation environment where strategies can be tested against historical market data.
