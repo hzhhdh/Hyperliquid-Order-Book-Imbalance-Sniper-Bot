@@ -3,7 +3,7 @@ Designed for DeFi projects and sophisticated crypto hedge funds, DeFi Nexus Bot 
 
 By offering full transparency and complete local control,  DeFi Trading Bot empowers high‑capital investors to optimize trading performance while mitigating risks in volatile markets.
 
-<p align="center"><img width="820" height="494" src="nexus bot/dashboard.png" alt="Bot interface" /></p>
+<p align="center"><img width="900" height="400" src="nexus bot/dashboard.png" alt="Bot interface" /></p>
 
 DeFi Nexus Bot is a cutting-edge, locally‑hosted algorithmic trading platform designed for high‑net‑worth traders and institutional investors. Seamlessly integrating with top DeFi protocols like Uniswap, SushiSwap, PancakeSwap, and emerging networks such as Arbitrum, Base, Optimism, and more(just adding in settings)
 
