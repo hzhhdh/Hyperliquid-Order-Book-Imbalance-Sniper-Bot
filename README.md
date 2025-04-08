@@ -1,6 +1,6 @@
 DeFi Nexus Sniper, go-to local trading bot for catching liquidity surges, price swings, and new token listings on decentralized exchanges like Uniswap, PancakeSwap, and more! 🎯 Whether the market’s pumping, dumping, or sideways, this bot automates sniping strategies with built-in risk controls, just pure algorithmic precision. Warning: Use responsibly—this is high-risk, educational-first software!
 
-<p align="center"><img width="820" height="494" src="dashboard/ui.jpg" alt="Bot interface" /></p>
+<p align="center"><img width="820" height="494" src="preview/mempool.png" alt="Bot interface" /></p>
 
 # Documentation + Download
 ## [Documentation](https://selenium-finance.gitbook.io/mev-fortress-documentation)
