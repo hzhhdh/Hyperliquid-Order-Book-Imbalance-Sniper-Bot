@@ -9,4 +9,7 @@ def update_whale_threshold(new_threshold: int):
 def toggle_twap(enable: bool):
     update_config("TWAP_ENABLE", enable)
 
-# Additional functions can be added for adjusting any parameter dynamically.
+if __name__ == "__main__":
+    update_gas_premium(1.15)
+    update_whale_threshold(6 * 10**18)
+    toggle_twap(False)
