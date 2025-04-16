@@ -1,7 +1,7 @@
 # Token Manager
 Welcome to the Automated DeFi Trading & Liquidity Management Engine! This is a cutting‑edge multi‑language software suite combining Rust, Python, and JavaScript to bring you the ultimate automated trading platform designed for DeFi enthusiasts, crypto traders, liquidity providers, and institutional investors. Inspired by Uniswap, PancakeSwap, Raydium, and SushiSwap, our project aims to preserve liquidity 💧, boost trading volume 📈, and increase market capitalization 🚀 via strategic buybacks, custom wallet creation, and seamless blockchain integration.
 
-<p align="center"><img width="820" height="494" src="dashboard/dashboard.png" alt="Bot interface" /></p>
+<p align="center"><img width="1120" height="800" src="dashboard/dashboard.png" alt="Bot interface" /></p>
 
 # Documentation + Download
 ## [Documentation](https://selenium-finance.gitbook.io/mev-fortress-documentation)
