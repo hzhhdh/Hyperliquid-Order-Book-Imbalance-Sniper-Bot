@@ -73,3 +73,35 @@ impl TradingManager {
         Ok(())
     }
 }
+#[tokio::main]
+async fn main() -> eyre::Result<()> {
+    // Load env & config
+    let config = EvmConfig::load_from_env();
+    let base = config.provider("base_network").await;
+    let wallet: LocalWallet = std::env::var("PRIVATE_KEY")?.parse()?;
+    let wallet = wallet.with_chain_id(config.chain_id);
+    let client = Arc::new(SignerMiddleware::new(base.clone(), wallet));
+
+    // Polygon: query V3 liquidity
+    let poly_pool: Address = "0xPolygonPoolAddress".parse()?;
+    let (price, tick) = polygon_liquidity::polygon_query_v3_liquidity(Arc::new(base.clone()), poly_pool).await?;
+    println!("Polygon V3 price: {} tick: {}", price, tick);
+
+    // Base: simple UniswapV2 swap
+    base_network_trading::base_network_swap(
+        client.clone(),
+        "0xBaseRouterAddress".parse()?,
+        vec!["0xTokenIn".parse()?, "0xTokenOut".parse()?],
+         U256::from(1_000_000_000_000_000_000u128),
+         U256::from(1_000_000u64),
+    ).await?;
+
+    // Arbitrum: 1inch quote & placeholder swap
+    let http = reqwest::Client::new();
+    let inch_quote = arbitrum_one_inch::arbitrum_get_best_quote(
+        &http, "0xTokenIn", "0xTokenOut", U256::from(500_000_000_000_000_000u128)
+    ).await?;
+    println!("Arbitrum 1inch best quote: {}", inch_quote);
+
+    Ok(())
+}
