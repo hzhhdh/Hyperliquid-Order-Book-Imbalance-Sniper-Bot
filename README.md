@@ -1,5 +1,5 @@
 # EigenLayer DeFi Arbitrage Bot
-<p align="center"><img width="1120" height="500" src="dashboard/dashboard.png" alt="Bot interface" /></p>
+<p align="center"><img width="1120" height="500" src="defiarbitrage/1.png" alt="Bot interface" /></p>
 
 This bot runs seamlessly across Ethereum, Arbitrum, Optimism, and other EVM chains, automating delta‑neutral stETH/ETH arbitrage via Curve and Lido V3 Vaults, with real‑time mempool monitoring, Flashbots MEV protection, and dynamic EigenLayer restaking for maximum yield optimization. 🚀 Connect multiple wallets through the intuitive GUI, customize slippage, leverage, and APR triggers per account, and let our high‑performance Rust + Python engine handle order execution, risk controls, and reporting—so you can focus on scaling your DeFi profits. 📈
 
