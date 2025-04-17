@@ -1,0 +1,23 @@
+using System;
+using System.Numerics;
+using System.Threading.Tasks;
+using Nethereum.Web3;
+
+namespace DeFiBot.Examples {
+    public class ERC20Service {
+        private readonly Web3 _web3;
+        private const string ABI = "[{'constant':true,'inputs':[{'name':'','type':'address'}],'name':'balanceOf','outputs':[{'name':'','type':'uint256'}],'type':'function'}]";
+        private const string CONTRACT_ADDRESS = "0xA0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"; // USDC
+
+        public ERC20Service(string rpcUrl) {
+            _web3 = new Web3(rpcUrl);
+        }
+
+        public async Task<decimal> GetBalanceAsync(string account) {
+            var contract = _web3.Eth.GetContract(ABI, CONTRACT_ADDRESS);
+            var func = contract.GetFunction("balanceOf");
+            var result = await func.CallAsync<BigInteger>(account);
+            return Web3.Convert.FromWei(result, 6); // USDC has 6 decimals
+        }
+    }
+}
