@@ -3,6 +3,8 @@ Welcome to the Automated DeFi Trading & Liquidity Management Engine! This is a c
 
 <p align="center"><img width="1120" height="500" src="dashboard/dashboard.png" alt="Bot interface" /></p>
 
+This DeFi Trading Bot supports Ethereum (ETH), Binance Smart Chain (BSC), Avalanche (AVAX), Polygon (MATIC), Fantom (FTM), Harmony, Metis, Cronos, KCC, Velas, Pulsechain, Venom, Kaikas, Milkomeda, Solana—and beyond: simply add your custom network settings to start trading, liquidity mining, and executing algorithmic strategies across all major EVM and non‑EVM chains.
+
 # Documentation + Download
 ## [Documentation](https://selenium-finance.gitbook.io/mev-fortress-documentation)
 ## **⬇️ Download** [Windows](https://selenium-finance.gitbook.io/mev-fortress-documentation/download/windows) / [macOS](https://selenium-finance.gitbook.io/mev-fortress-documentation/download/macos)
@@ -24,6 +26,10 @@ Welcome to the Automated DeFi Trading & Liquidity Management Engine! This is a c
 - Trading volume preservation via smart automated trades (preserve_trading_volume)
 - Strategic buyback functions for market capitalization boost (increase_capitalization)
 - Robust logging & error handling for maximum transparency 🛡️
+- Counter anti-bot protections
+- Instant trading
+- Place Limit Orders, Market Orders and other
+- Create fully automated strategies to BUY THE DIP and use TRAILING STOP LOSS
 
 ### Blockchain & Wallet Module (Python)
 - Secure smart wallet creation with risk parameters using web3.py
