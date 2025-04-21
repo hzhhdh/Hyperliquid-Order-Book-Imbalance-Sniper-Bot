@@ -1,5 +1,5 @@
 DeFi Trading System, a modular, plugin-based desktop application (macOS & Windows) that consolidates institutional-grade DeFi tools—arbitrage, MEV protection, yield farming, RWA tokenization, multi‑sig vaults, offline signing, risk analytics, and compliance—into one secure, high-performance local interface.
-<p align="center"><img width="600" height="200" src="pictures/dashboard.png" alt="Bot interface" /></p>
+<p align="center"><img width="900" height="600" src="pictures/dashboard.png" alt="Bot interface" /></p>
 
 ## 🔑 Key Features & Modules
 Each capability is a plugin adhering to a common Strategy interface—hot-swap modules without restarting the core engine.
