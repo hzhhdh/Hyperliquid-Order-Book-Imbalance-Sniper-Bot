@@ -3,28 +3,28 @@
 > **What’s this all about?**  
 > DeFiPro Desktop is your **institutional-grade** DeFi HQ for macOS & Windows. Think portfolio tracker, trading terminal, yield analyzer, bot builder, tax engine, and secure wallet—all under one roof. 🔐✨
 
-<p align="center"><img width="900" height="600" src="pictures/dashboard.png" alt="Bot interface" /></p>
+<p align="center"><img width="900" height="700" src="pictures/dashboard.png" alt="Bot interface" /></p>
 
 ## 🔑 Key Features & Modules
 Each capability is a plugin adhering to a common Strategy interface—hot-swap modules without restarting the core engine.
 
 - 🔄 Multi-Chain Portfolio Manager:
-Keep tabs on wallets and exchanges across Ethereum, BSC, Solana, and 20+ more chains in real time.
+   Keep tabs on wallets and exchanges across Ethereum, BSC, Solana, and 20+ more chains in real time.
 
 - 🚀 Advanced Trading Terminal
-CEX + DEX order books, smart routing, TWAP/iceberg/OCO orders—trade like a pro.
+    CEX + DEX order books, smart routing, TWAP/iceberg/OCO orders—trade like a pro.
 
 - 🌾 Yield Farming & Arbitrage Alerts
-Live APY comparisons from 50+ protocols and instant opportunity notifications.
+    Live APY comparisons from 50+ protocols and instant opportunity notifications.
 
 - 🤖 No-Code Strategy Backtester & Bot Builder
-Visual workflow editor, historical simulations, AI-powered suggestions—zero coding needed.
+    Visual workflow editor, historical simulations, AI-powered suggestions—zero coding needed.
 
 - 📑 Tax & Compliance Engine
-Auto-classify trades, staking rewards, airdrops; export jurisdiction-specific reports (FIFO/LIFO).
+    Auto-classify trades, staking rewards, airdrops; export jurisdiction-specific reports (FIFO/LIFO).
 
 - 📊 Real-Time Analytics & News
-On-chain metrics, sentiment heatmaps, protocol updates, custom alerts.
+    On-chain metrics, sentiment heatmaps, protocol updates, custom alerts.
 
 ## 📥 Installation & Setup
 ### macOS
