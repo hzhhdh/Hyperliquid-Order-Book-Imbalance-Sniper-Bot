@@ -8,23 +8,23 @@
 ## 🔑 Key Features & Modules
 Each capability is a plugin adhering to a common Strategy interface—hot-swap modules without restarting the core engine.
 
-- 🔄 Multi-Chain Portfolio Manager:
-   Keep tabs on wallets and exchanges across Ethereum, BSC, Solana, and 20+ more chains in real time.
+🔄 Multi-Chain Portfolio Manager:
+- Keep tabs on wallets and exchanges across Ethereum, BSC, Solana, Base, Sonic and 20+ more chains in real time.
 
-- 🚀 Advanced Trading Terminal
-    CEX + DEX order books, smart routing, TWAP/iceberg/OCO orders—trade like a pro.
+🚀 Advanced Trading Terminal
+- CEX + DEX order books, smart routing, TWAP/iceberg/OCO orders—trade like a pro.
 
-- 🌾 Yield Farming & Arbitrage Alerts
-    Live APY comparisons from 50+ protocols and instant opportunity notifications.
+🌾 Yield Farming & Arbitrage Alerts
+- Live APY comparisons from 50+ protocols and instant opportunity notifications.
 
-- 🤖 No-Code Strategy Backtester & Bot Builder
-    Visual workflow editor, historical simulations, AI-powered suggestions—zero coding needed.
+🤖 No-Code Strategy Backtester & Bot Builder
+- Visual workflow editor, historical simulations, AI-powered suggestions—zero coding needed.
 
-- 📑 Tax & Compliance Engine
-    Auto-classify trades, staking rewards, airdrops; export jurisdiction-specific reports (FIFO/LIFO).
+📑 Tax & Compliance Engine
+- Auto-classify trades, staking rewards, airdrops; export jurisdiction-specific reports (FIFO/LIFO).
 
-- 📊 Real-Time Analytics & News
-    On-chain metrics, sentiment heatmaps, protocol updates, custom alerts.
+📊 Real-Time Analytics & News
+- On-chain metrics, sentiment heatmaps, protocol updates, custom alerts.
 
 ## 📥 Installation & Setup
 ### macOS
