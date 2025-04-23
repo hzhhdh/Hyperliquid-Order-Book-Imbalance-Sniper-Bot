@@ -3,7 +3,7 @@
 > **What’s this all about?**  
 > DeFiPro Desktop is your **institutional-grade** DeFi HQ for macOS & Windows. Think portfolio tracker, trading terminal, yield analyzer, bot builder, tax engine, and secure wallet—all under one roof. 🔐✨
 
-<p align="center"><img width="900" height="700" src="pictures/dashboard.png" alt="Bot interface" /></p>
+<p align="center"><img width="900" height="550" src="pictures/dashboard.png" alt="Bot interface" /></p>
 
 ## 🔑 Key Features & Modules
 Each capability is a plugin adhering to a common Strategy interface—hot-swap modules without restarting the core engine.
