@@ -2,7 +2,6 @@
 
 > **What’s this all about?**  
 > DeFiPro Desktop is your **institutional-grade** DeFi HQ for macOS & Windows. Think portfolio tracker, trading terminal, yield analyzer, bot builder, tax engine, and secure wallet—all under one roof. 🔐✨
-🎉 Whether you manage a \$100k+ DeFi portfolio or just love geeking out on yield strategies, this app is built for you.
 
 <p align="center"><img width="900" height="600" src="pictures/dashboard.png" alt="Bot interface" /></p>
 
