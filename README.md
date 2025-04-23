@@ -95,8 +95,6 @@ Python Environment: Ensure Python 3.9+ is installed.
 Dependencies: Install the ```python-telegram-bot``` library:
 ```
 bash
-نسخ
-تحرير
 pip install python-telegram-bot
 ```
 
@@ -115,8 +113,7 @@ Do not hardcode it in public repos; use environment variables or a secure vault.
 Polling is the easiest way to get started without setting up servers.
 ```
 python
-نسخ
-تحرير
+
 from telegram import Bot, Update
 from telegram.ext import Updater, CommandHandler
 
@@ -146,8 +143,7 @@ Expose a Secure URL (e.g., via nginx with TLS).
 Set the Webhook:
 ```
 python
-نسخ
-تحرير
+
 bot = Bot(token=TOKEN)
 bot.set_webhook(url="https://your-domain.com/telegram_webhook")
 ```
