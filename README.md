@@ -1,15 +1,11 @@
-ArbiDeFi merges the institutional‑grade desktop security and cross‑chain analytics, to search all arbitrage opportunites using “Flashbot” flash‑loan executor, delivering a comprehensive DEFI arbitrage bot that: monitors AMM vs. CEX spreads and MEV opportunities in real time , leverages dYdX, AAVE, Balancer flash loans routed through 1inch (and other) when profitable, supports automated limit‑order grids across Ethereum, BSC, Solana, Avalanche, Arbitrum, and more , and integrates yield‑farming/restaking recommendations via EigenLayer data. By unifying local key‑management, multi‑sig vaults, portfolio analytics, and Telegram‑based trade alerts, ArbiVault Pro turns automated software tools that interact with decentralized finance (DeFi) markets into a single, high‑performance desktop application.
+
 <p align="center"><img width="900" height="600" src="pictures/dashboard.png" alt="Bot interface" /></p>
 
 ## 🔑 Key Features & Modules
 Each capability is a plugin adhering to a common Strategy interface—hot-swap modules without restarting the core engine.
 
-- 🔄 Arbitrage Scanner:
-   - AMM vs. AMM/CEX Arbitrage: Employs Hummingbot’s amm_arb strategy to watch any SPOT AMM DEX vs. SPOT CEX or CLOB DEX pair—placing offsetting orders when min_profitability exceeds your threshold after fees.
-   - ArbitrageExecutor Engine: A specialized component simultaneously executes buy/sell orders across two markets (CEX↔DEX), validating profitability against gas and exchange fees before trades
-   - Spot‑Perpetual Convergence: Bridges spot and perpetual markets, opening opposing positions when spreads breach min_divergence and closing upon min_convergence, capturing funding‑rate inefficiencies
-   - Flash‑Loan Module: “Flashbot” fills 0x limit orders and carries out multi‑swap arbitrages by flash‑borrowing assets from dYdX and swapping on 1inch when price gaps permit profit
-   - Grid & Limit Orders: Integrates a protocol enabling automated limit orders, efficiently adjustable w/ custom price ranges, grid trading like features—configurable per pair, per chain
+- 🔄 Multi-Chain Portfolio Manager:
+ - Keep tabs on wallets and exchanges across Ethereum, BSC, Solana, and 20+ more chains in real time. :contentReference[oaicite:1]{index=1}
 
 - 🌾 Yield Farming & LP: APY vs. impermanent loss modeling, auto-compound flows
    - APY & Risk Comparison: Scans DeFi vaults, farms, and restaking pools—modeling impermanent‑loss vs. yield trade‑offs and EigenLayer re‑staking returns vs. slashing risk
