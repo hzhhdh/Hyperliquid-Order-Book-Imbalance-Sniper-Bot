@@ -2,7 +2,7 @@ BSC-AutoTrader is the first desktop trading bot designed exclusively for Binance
 
 <p align="center"><img width="900" height="550" src="pictures/dashboard.png" alt="Bot interface" /></p>
 
-
+BSC-AutoTrader Pro is a lightning-fast, low-latency arbitrage and volatility grid trading bot on Binance Smart Chain, engineered for $100K+ portfolios to capture real-time price swings, flash crashes, and liquidity pool snipes with on-chain automation and mempool scanningIt features dynamic risk controls, advanced impermanent loss hedging, secure hardware-wallet integration, and enterprise-grade audit logging for maximum ROI in high-volatility DeFi markets
 ## Key Features
 - Ultra-Fast Execution & MEV Protection ⚡
     - Snatch new BSC tokens within 1 block of launch (like AutoSnipe but faster! 🎯).
