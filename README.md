@@ -1,5 +1,5 @@
 # BSC AutoTrader
-BSC-AutoTrader is the first desktop trading bot designed exclusively for Binance Smart Chain (BSC) institutional investors, blending Wall Street-grade security with DeFi agility. Built for Windows and macOS, it automates high-frequency strategies like cross-DEX arbitrage, token sniping, and MEV-protected trades—all while ensuring compliance with global regulations. Say goodbye to sleepless nights and manual errors; let AI-powered algorithms maximize your BSC returns 24/7! 💼🔒
+BSC-AutoTrader is DeFi trading bot designed exclusively for Binance Smart Chain (BSC), blending Wall Street-grade security with DeFi agility. Built for Windows and macOS, it automates high-frequency strategies like cross-DEX arbitrage, token sniping, and MEV-protected trades—all while ensuring compliance with global regulations. Say goodbye to sleepless nights and manual errors; let AI-powered algorithms maximize your BSC returns 24/7! 💼🔒
 
 <p align="center"><img width="900" height="550" src="pic/general.png" alt="Bot interface" /></p>
 
