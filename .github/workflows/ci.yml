@@ -1,21 +1,20 @@
-#[derive(Clone, Debug)]
-pub struct PancakeSwap {
-    pub router: Address,
-    pub factory: Address,
-}
+name: BSCAutoTrader CI
 
-impl PancakeSwap {
-    pub async fn get_pair(&self, token_a: Address, token_b: Address) -> Result<Address, String> {
-        let contract = Contract::from_json(
-            self.factory,
-            include_bytes!("abis/pancake_factory.json"),
-        )?;
-        
-        contract
-            .method::<_, Address>("getPair", (token_a, token_b))
-            .unwrap()
-            .call()
-            .await
-            .map_err(|e| format!("Error: {:?}", e))
-    }
-}
+on: [push, pull_request]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions-rs/toolchain@v1
+        with:
+          profile: minimal
+          components: rustfmt, clippy
+      - run: cargo test --all-features
+      
+  security:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ShiftLeftSecurity/sast-scan@v2
