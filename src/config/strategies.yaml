@@ -1,0 +1,11 @@
+cross_dex_arbitrage:
+  enabled: true
+  exchanges: [pancakeswap, apeswap, binance]
+  min_profit: 0.15%
+  gas_limit: 500000
+  allowed_coins: [BNB, USDT, BUSD]
+
+liquidity_sniping:
+  max_slippage: 1.2%
+  contract_checks: [token_sniffer, certik_audit]
+  blacklisted_tokens: [0xScam...]
