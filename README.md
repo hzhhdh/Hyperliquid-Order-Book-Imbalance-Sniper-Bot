@@ -1,9 +1,14 @@
 # BSC AutoTrader
-BSC-AutoTrader is DeFi trading bot designed exclusively for Binance Smart Chain (BSC), blending Wall Street-grade security with DeFi agility. Built for Windows and macOS, it automates high-frequency strategies like cross-DEX arbitrage, token sniping, and MEV-protected trades—all while ensuring compliance with global regulations. Say goodbye to sleepless nights and manual errors; let AI-powered algorithms maximize your BSC returns 24/7! 💼🔒
+BSC-AutoTrader is a cutting-edge, desktop-based trading platform engineered for executing cross-DEX arbitrage, dynamic TWAP/VWAP execution, MEV-protected sniping, and compliance-driven strategies on the Binance Smart Chain (BSC). Built in Rust/C++ for blistering speed and paired with an Electron.js interface, this software delivers institutional-grade security, low-latency trading, and AI-powered analytics tailored for high-net-worth investors and institutions. 🚀🔒
 
 <p align="center"><img width="900" height="550" src="pic/general.png" alt="Bot interface" /></p>
 
-BSC-AutoTrader Pro is a lightning-fast, low-latency arbitrage and volatility grid trading bot on Binance Smart Chain, engineered for $100K+ portfolios to capture real-time price swings, flash crashes, and liquidity pool snipes with on-chain automation and mempool scanningIt features dynamic risk controls, advanced impermanent loss hedging, secure hardware-wallet integration, and enterprise-grade audit logging for maximum ROI in high-volatility DeFi markets
+BSC AutoTrader empowers traders with a robust engine to automate high-frequency arbitrage, split large orders to minimize slippage, and snipe new BSC token launches within 1 block. Its MEV protection module thwarts sandwich attacks, while cross-chain integrations (BSC↔Ethereum↔Polygon) unlock profit opportunities across fragmented markets. The built-in Sniping Module identifies fresh liquidity pools and social sentiment spikes, enabling traders to front-run hype cycles and secure early gains. Whether leveraging flash loan arbitrage, managing multi-wallet risk, or complying with FATF/SEC guidelines, this platform is designed for precision, scalability, and maximum capital efficiency. 💼💰
+
+Tailored for institutional investors with $100k+ capital, BSC AutoTrader excels at handling bulk BSC acquisitions, OTC-level liquidity, and volatility arbitrage while slashing gas costs and slippage. Seamlessly integrated with Chainlink CCIP for cross-chain swaps and CertiK-audited protocols, it aligns with institutional risk management best practices. The AI Sentiment Engine scans BSC project whitepapers and social trends, while backtesting tools stress-test strategies against historical data—perfect for mastering BSC dark pool trading or optimizing yield farming.
+
+From hedge funds to family offices, BSC AutoTrader scales effortlessly, combining DeFi agility with TradFi security. 😎🔥 Whether you’re sniping CAKE launches, routing orders across PancakeSwap and Binance CEX, or safeguarding against regulatory pitfalls, this software is your all-in-one solution for dominating BSC markets with confidence.
+
 ## Key Features
 - Ultra-Fast Execution & MEV Protection ⚡
     - Snatch new BSC tokens within 1 block of launch (like AutoSnipe but faster! 🎯).
