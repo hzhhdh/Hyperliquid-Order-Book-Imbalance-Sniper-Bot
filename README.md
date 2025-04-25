@@ -11,7 +11,7 @@ From hedge funds to savvy individuals, Chrono Bot scales effortlessly, merging D
 
 ## Key Features
 
-1. Honeypot Detection & Safe Entry Module
+### Honeypot Detection & Safe Entry Module
 
     - Manual Honeypot Filters: Users predefine conditions for ERC-20 token purchases on Uniswap V3:
 
@@ -27,7 +27,7 @@ From hedge funds to savvy individuals, Chrono Bot scales effortlessly, merging D
 
         - Trading volume exceeds $500k in 1 hour (threshold customizable).
 
-2. Cross-Protocol Arbitrage Engine
+### Cross-Protocol Arbitrage Engine
 
     - Uniswap-to-dYdX Pipeline:
 
@@ -39,7 +39,7 @@ From hedge funds to savvy individuals, Chrono Bot scales effortlessly, merging D
 
 Example: If UNI trades at 10 on Uniswap and 10.50 on dYdX, the bot buys on Uniswap and shorts on dYdX to lock in a $0.50 profit per token.
 
-3. Dynamic Liquidity Management (Uniswap V3)
+### Dynamic Liquidity Management (Uniswap V3)
 
     - Manual Price Ranges: Users define liquidity provision ranges based on market outlook:
 
@@ -51,7 +51,7 @@ Example: If UNI trades at 10 on Uniswap and 10.50 on dYdX, the bot buys on Unisw
 
     - Auto-Compounding: Reinvests earned fees into stablecoins or blue-chip tokens (user-selectable).
 
-4. Risk Mitigation Modules
+### Risk Mitigation Modules
 
     - Stop-Loss & Take-Profit:
 
@@ -63,7 +63,7 @@ Example: If UNI trades at 10 on Uniswap and 10.50 on dYdX, the bot buys on Unisw
 
     - Circuit Breaker: Pauses trading if portfolio drawdown exceeds user-defined thresholds (e.g., 5% loss in 1 hour).
 
-5. Multi-Market Strategies
+### Multi-Market Strategies
 
     - Bull Market: Buy tokens with rising volume + positive funding rates on dYdX.
 
@@ -71,7 +71,7 @@ Example: If UNI trades at 10 on Uniswap and 10.50 on dYdX, the bot buys on Unisw
 
     - Sideways Market: Provide liquidity in stablecoin pairs (e.g., USDC/DAI) with tight ranges.
 
-6. Priority Gas Auction (PGA) Module
+### Priority Gas Auction (PGA) Module
 
     - Dynamic Gas Bidding: Automatically adjusts gas fees to outbid competitors during high-demand periods (e.g., token launches, news events).
 
@@ -81,13 +81,13 @@ Example: If UNI trades at 10 on Uniswap and 10.50 on dYdX, the bot buys on Unisw
 
 Example: Snipes a trending meme coin launch by paying 20% higher gas than the current average.
 
-7. MEV-Resistant Order Flow
+### MEV-Resistant Order Flow
 
     - Private Transaction Relay: Integrates with Flashbots or Taichi Network to submit orders directly to miners/validators, bypassing public mempools and avoiding front-running.
 
     - Sandwich Attack Protection: Splits large orders into smaller, randomized chunks over 1–5 minutes to disguise trading intent.
 
-8. Liquidity-Aware Order Splitting
+### Liquidity-Aware Order Splitting
 
     - Slippage Minimization: For large trades ($100k+), the bot splits orders across:
 
@@ -97,7 +97,7 @@ Example: Snipes a trending meme coin launch by paying 20% higher gas than the cu
 
     - DEX Aggregator Integration: Routes trades via 1inch or CowSwap to find the best price across all DEXs.
 
-9. Limit Order Triggers with Fill-or-Kill
+### Limit Order Triggers with Fill-or-Kill
 
     - Customizable Limit Orders: Users set:
 
@@ -109,7 +109,7 @@ Example: Snipes a trending meme coin launch by paying 20% higher gas than the cu
 
 Example: Place a limit order to buy BTC at $60k on dYdX, valid only if Uniswap’s BTC/ETH pair deviates by 2%.
 
-10. Real-Time Liquidity Pool Monitoring
+### Real-Time Liquidity Pool Monitoring
 
     - Liquidity Alerts: Tracks Uniswap V3 pools for:
 
@@ -119,7 +119,7 @@ Example: Place a limit order to buy BTC at $60k on dYdX, valid only if Uniswap�
 
 Auto-Exit: Sells tokens immediately if pool liquidity drops below a user-defined threshold (e.g., -30% in 10 minutes).
 
-11. Cross-Protocol Atomic Arbitrage
+### Cross-Protocol Atomic Arbitrage
 
     - Instant Profit Loops: Executes simultaneous trades across protocols in a single transaction (e.g., buy on Uniswap, sell on dYdX) using flash loans or self-funded capital.
 
@@ -135,13 +135,13 @@ Example:
 
         - Repay loan + fees in one atomic transaction.
 
-12. Customizable Transaction Scheduling
+### Customizable Transaction Scheduling
 
     - Time-Based Triggers: Schedule trades during low-competition periods (e.g., 3 AM UTC when gas fees are low).
 
     - Event-Based Triggers: Execute orders after specific on-chain events (e.g., Coinbase listing, Fed rate announcements).
 
-13. Pre-Emptive Cancellation
+### Pre-Emptive Cancellation
 
     - Cancellation Bots: Deploys a secondary bot to cancel pending transactions if:
 
@@ -149,7 +149,7 @@ Example:
 
         - Competing bots are detected with higher gas bids.
 
-14. Liquidity Provider (LP) Sniping
+### Liquidity Provider (LP) Sniping
 
     - LP Front-Running: Monitors new Uniswap V3 LP positions and buys tokens before liquidity is fully active.
 
@@ -157,7 +157,7 @@ Example:
 
 Example: Snipes a new LDO/ETH pool with $2M liquidity, buying LDO before price adjusts.
 
-15. User Reputation System
+### User Reputation System
 
     - Tiered Access: High-frequency traders earn "trust scores" for:
 
