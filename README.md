@@ -305,6 +305,42 @@ def is_honeypot(token_address):
 - dYdX: StarkEx full node.
 - Storage: 5TB+ for historical arbitrage data.
 
+## How to get 1k$ per day using Chrono Bot
+Achieving $1 000 per day with $100 000 of capital using Chrono Bot requires targeting a 1% daily ROI through a blend of cross-protocol arbitrage, MEV-resistant sniping, and dynamic liquidity management. This guide walks through the essential strategy selection, parameter tuning, risk controls, performance monitoring needed to make 1% daily returns realistic and repeatable.
+
+### Strategy Selection
+Cross-Protocol Arbitrage
+   - Arbitrage involves buying on one protocol and selling on another to exploit price gap
+   - Configure a price deviation threshold—typically 0.5%–1%—to capture spreads large enough to cover gas and slippage
+
+MEV-Resistant Sniping
+   - Use Flashbots bundles to execute atomic buy-on-Uniswap/sell-on-dYdX loops, aiming for 0.2%–2% profit per cycle
+   - Enable the Honeypot Detection Module to filter out malicious tokens before sniping launches.
+
+### Parameter Optimization
+Spread & Volume Thresholds
+   - Require ≥$500 000 trading volume in the past hour for each token pair to ensure sufficient liquidity and low slippage
+   - Fine-tune your arb threshold to 0.5% on Uniswap↔dYdX, balancing trade frequency with profitability 
+
+Order Splitting & Gas Strategy
+   - Split large orders (e.g., $100 000) into 10% chunks every 30 s to minimize market impact
+   - Use dynamic gas bidding up to 150 Gwei during high-value snipes, adjusting aggression based on mempool congestion
+
+### Risk Management
+Stop-Loss & Take-Profit
+   - Implement a stop-loss at 15% below entry and take-profit at 1% above entry for each position to lock in gains and cap drawdowns
+
+Circuit Breaker & Diversification
+   - Activate a circuit breaker to halt trading if portfolio drawdown exceeds 5% within one hour
+   - Diversify across 5–10 token pairs to smooth returns and reduce single-asset risk
+
+### Monitoring & Continuous Improvement
+- Use Chrono Bot’s dashboard to log P&L, slippage, and gas costs in real time.
+- Perform weekly reviews: retire underperforming pairs, tweak thresholds based on new on-chain data, and redeploy updates.
+- Keep abreast of network congestion, gas fee forecasts, and new token listings to seize fresh arbitrage windows.
+
+Choosing and fine-tuning cross-protocol arbitrage and MEV-resistant sniping strategies, enforcing robust risk controls, and performing thorough backtesting, Chrono Bot can target a consistent 1% daily ROI—equivalent to $1 000/day on $100 000 capital. Continuous monitoring and parameter adjustments are vital to sustaining performance in evolving markets.
+
 ## How to connect to telegram
 In just a few steps—creating a bot via BotFather, installing the python-telegram-bot library, implementing polling or webhooks, and deploying your integration—you can push ArbiDeFi arbitrage alerts to your Telegram channel or group. Register the bot with BotFather to get your token . Install the official python-telegram-bot package via pip. Choose between getUpdates polling or webhook-based delivery to receive updates. Then, in your scanner code, call ```bot.send_message(chat_id, text)``` to dispatch alerts. For production, secure your webhook URL with HTTPS and follow security best practices for Telegram bots
 
