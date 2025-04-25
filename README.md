@@ -37,7 +37,7 @@ From hedge funds to savvy individuals, Chrono Bot scales effortlessly, merging D
 
         - Hedge on dYdX: Automatically opens a short/long position on dYdX (leverage set manually: 1x–10x).
 
-Example: If UNI trades at 10onUniswapand10onUniswapand10.50 on dYdX, the bot buys on Uniswap and shorts on dYdX to lock in a $0.50 profit per token.
+Example: If UNI trades at 10 on Uniswap and 10.50 on dYdX, the bot buys on Uniswap and shorts on dYdX to lock in a $0.50 profit per token.
 
 3. Dynamic Liquidity Management (Uniswap V3)
 
