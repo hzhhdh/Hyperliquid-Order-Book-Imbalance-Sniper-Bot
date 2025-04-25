@@ -310,7 +310,7 @@ def is_honeypot(token_address):
 
 ## Infrastructure
 ### Data Pipeline
-<p align="center"><img width="500" height="200" src="pic/Diagram.png" alt="Bot interface" /></p>
+<p align="center"><img width="820" height="220" src="pic/Diagram.png" alt="Bot interface" /></p>
 
 ### Node Requirements
 - Ethereum: 2x dedicated Geth nodes (Infura fallback).
