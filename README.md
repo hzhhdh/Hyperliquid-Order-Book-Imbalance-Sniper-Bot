@@ -31,19 +31,19 @@ From hedge funds to savvy individuals, Chrono Bot scales effortlessly, merging D
 
 ### Honeypot Detection & Safe Entry Module
 
-    - Manual Honeypot Filters: Users predefine conditions for ERC-20 token purchases on Uniswap V3:
+- Manual Honeypot Filters: Users predefine conditions for ERC-20 token purchases on Uniswap V3:
 
-        - Liquidity locked ≥3 months (verified via Unicrypt or Team Finance).
+    - Liquidity locked ≥3 months (verified via Unicrypt or Team Finance).
 
-        - No blacklisted functions (e.g., transfer tax >5%).
+    - No blacklisted functions (e.g., transfer tax >5%).
 
-        - Audit status (user selects: "Audited by CertiK," "No audit," or "Community verified").
+    - Audit status (user selects: "Audited by CertiK," "No audit," or "Community verified").
 
-    - Buy Triggers: Execute purchases only if:
+- Buy Triggers: Execute purchases only if:
 
-        - Token price is ±10% of launch price (user-adjustable).
+    - Token price is ±10% of launch price (user-adjustable).
 
-        - Trading volume exceeds $500k in 1 hour (threshold customizable).
+    - Trading volume exceeds $500k in 1 hour (threshold customizable).
 
 ### Cross-Protocol Arbitrage Engine
 
