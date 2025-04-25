@@ -3,10 +3,16 @@
 
 ## About
 Chrono Bot is a premier, rules-based trading platform designed for executing cross-protocol arbitrage, MEV-resistant sniping, and dynamic liquidity management across Uniswap V3 and dYdX. Built in Solidity and React.js for unparalleled transparency and control, this non-AI bot offers institutional-grade security, gas-optimized transactions, and manual parameter customization tailored for high-net-worth traders and institutions. 🚀🔒
-Chrono Bot empowers users to automate cross-DEX arbitrage (Uniswap↔dYdX), split large orders to curb slippage, and snipe token launches with MEV protection via Flashbots integration. 
+
+ Chrono Bot empowers users to automate cross-DEX arbitrage (Uniswap↔dYdX), split large orders to curb slippage, and snipe token launches with MEV protection via Flashbots integration. 
 Its Honeypot Detection Module filters malicious tokens, while dynamic liquidity ranges adapt to market volatility, maximizing fee yields. 
-The platform’s Cross-Protocol Engine locks profits by hedging spot buys with leveraged derivatives, and private transaction relays thwart front-running. Whether exploiting price dislocations, managing multi-wallet strategies, or complying with audit standards, Chrono Bot prioritizes precision, security, and capital efficiency.
-Tailored for investors with $100k+ portfolios, the bot excels in bulk ETH acquisitions, low-slippage trades, and arbitrage loops across Ethereum and Layer 2s. Seamlessly integrated with Chainlink oracles and CertiK-audited protocols, it aligns with institutional risk frameworks. The manual Strategy Builder lets traders craft custom “if-then” rules, while Circuit Breakers and cold storage vaults safeguard against exploits. Backtest tools validate strategies against historical data, perfect for mastering volatile markets or optimizing LP positions.
+The platform’s Cross-Protocol Engine locks profits by hedging spot buys with leveraged derivatives, and private transaction relays thwart front-running. 
+Whether exploiting price dislocations, managing multi-wallet strategies, or complying with audit standards, Chrono Bot prioritizes precision, security, and capital efficiency.
+
+Tailored for investors with $100k+ portfolios, the bot excels in bulk ETH acquisitions, low-slippage trades, and arbitrage loops across Ethereum and Layer 2s. 
+Seamlessly integrated with Chainlink oracles and CertiK-audited protocols, it aligns with institutional risk frameworks. 
+The manual Strategy Builder lets traders craft custom “if-then” rules, while Circuit Breakers and cold storage vaults safeguard against exploits. Backtest tools validate strategies against historical data, perfect for mastering volatile markets or optimizing LP positions.
+
 From hedge funds to savvy individuals, Chrono Bot scales effortlessly, merging DeFi agility with TradFi reliability. Whether sniping Uniswap V3 pools, routing orders across dYdX perpetuals, or avoiding rug pulls, this platform is your all-in-one solution for dominating Ethereum markets—no AI black box, just relentless control and transparency.
 
 ## 📥 Installation & Setup
