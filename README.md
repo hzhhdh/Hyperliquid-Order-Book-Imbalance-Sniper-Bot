@@ -1,7 +1,7 @@
 # Chrono Bot
 Chrono Bot is a premier, rules-based trading platform designed for executing cross-protocol arbitrage, MEV-resistant sniping, and dynamic liquidity management across Uniswap V3 and dYdX. Built in Solidity and React.js for unparalleled transparency and control, this non-AI bot offers institutional-grade security, gas-optimized transactions, and manual parameter customization tailored for high-net-worth traders and institutions. 🚀🔒
 
-<p align="center"><img width="900" height="500" src="pic/general1.png" alt="Bot interface" /></p>
+<p align="center"><img width="900" height="700" src="pic/general1.png" alt="Bot interface" /></p>
 
 Chrono Bot empowers users to automate cross-DEX arbitrage (Uniswap↔dYdX), split large orders to curb slippage, and snipe token launches with MEV protection via Flashbots integration. Its Honeypot Detection Module filters malicious tokens, while dynamic liquidity ranges adapt to market volatility, maximizing fee yields. The platform’s Cross-Protocol Engine locks profits by hedging spot buys with leveraged derivatives, and private transaction relays thwart front-running. Whether exploiting price dislocations, managing multi-wallet strategies, or complying with audit standards, Chrono Bot prioritizes precision, security, and capital efficiency. 💼💰
 
