@@ -229,6 +229,22 @@ Example: Snipes a new LDO/ETH pool with $2M liquidity, buying LDO before price a
 2. Run installer, enable sandboxed updates.
 3. Finish setup wizard.
 
+## System Architecture
+Chrono Bot is a multi-layer decentralized trading system designed for low-latency execution, cross-protocol arbitrage, and institutional-grade security.
+### High-Level Architecture Diagram
+┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
+│                 │    │                 │    │                 │
+│   Frontend UI   │ ←→ │   Backend API   │ ←→ │ Smart Contracts │
+│  (React/Web3)   │    │ (Rust/Python)   │    │   (Solidity)    │
+└─────────────────┘    └─────────────────┘    └─────────────────┘
+       ↑                      ↑                       ↑
+       │                      │                       │
+┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
+│                 │    │                 │    │                 │
+│  User Wallets   │    │   Data Oracles  │    │  DEX Protocols  │
+│ (MetaMask, Ledger)│  │ (Chainlink, Pyth)│  │ (Uniswap, dYdX) │
+└─────────────────┘    └─────────────────┘    └─────────────────┘
+
 ## How to connect to telegram
 In just a few steps—creating a bot via BotFather, installing the python-telegram-bot library, implementing polling or webhooks, and deploying your integration—you can push ArbiDeFi arbitrage alerts to your Telegram channel or group. Register the bot with BotFather to get your token . Install the official python-telegram-bot package via pip. Choose between getUpdates polling or webhook-based delivery to receive updates. Then, in your scanner code, call ```bot.send_message(chat_id, text)``` to dispatch alerts. For production, secure your webhook URL with HTTPS and follow security best practices for Telegram bots
 
