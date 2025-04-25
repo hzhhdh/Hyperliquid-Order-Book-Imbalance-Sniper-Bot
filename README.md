@@ -234,17 +234,18 @@ Chrono Bot is a multi-layer decentralized trading system designed for low-latenc
 ### High-Level Architecture Diagram
 
                                                            
-   Frontend UI    ←→     Backend API    ←→     Smart Contracts 
-
-  (React/Web3)          (Rust/Python)            (Solidity)    
-
-       ↑                      ↑                       ↑
-       │                      │                       │
-
-
-  User Wallets          Data Oracles            DEX Protocols  
-
- (MetaMask, Ledger)     (Chainlink, Pyth)         (Uniswap, dYdX) 
+        ┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
+        │                 │    │                 │    │                 │
+        │   Frontend UI   │ ←→ │   Backend API   │ ←→ │ Smart Contracts │
+        │  (React/Web3)   │    │ (Rust/Python)   │    │   (Solidity)    │
+        └─────────────────┘    └─────────────────┘    └─────────────────┘
+               ↑                       ↑                       ↑
+               │                       │                       │
+        ┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
+        │                 │    │                 │    │                 │
+        │  User Wallets   │    │   Data Oracles  │    │  DEX Protocols  │
+        │ (MetaMask, Ledger)│  │ (Chainlink, Pyth)│   │ (Uniswap, dYdX) │
+        └─────────────────┘    └─────────────────┘    └─────────────────┘
 
 ### Key Components
 1. Frontend: React-based UI with TradingView charts and wallet management.
