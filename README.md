@@ -232,18 +232,76 @@ Example: Snipes a new LDO/ETH pool with $2M liquidity, buying LDO before price a
 ## System Architecture
 Chrono Bot is a multi-layer decentralized trading system designed for low-latency execution, cross-protocol arbitrage, and institutional-grade security.
 ### High-Level Architecture Diagram
-┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
-│                 │    │                 │    │                 │
-│   Frontend UI   │ ←→ │   Backend API   │ ←→ │ Smart Contracts │
-│  (React/Web3)   │    │ (Rust/Python)   │    │   (Solidity)    │
-└─────────────────┘    └─────────────────┘    └─────────────────┘
+
+                                                           
+   Frontend UI    ←→     Backend API    ←→     Smart Contracts 
+
+  (React/Web3)          (Rust/Python)            (Solidity)    
+
        ↑                      ↑                       ↑
        │                      │                       │
-┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
-│                 │    │                 │    │                 │
-│  User Wallets   │    │   Data Oracles  │    │  DEX Protocols  │
-│ (MetaMask, Ledger)│  │ (Chainlink, Pyth)│  │ (Uniswap, dYdX) │
-└─────────────────┘    └─────────────────┘    └─────────────────┘
+
+
+  User Wallets          Data Oracles            DEX Protocols  
+
+ (MetaMask, Ledger)     (Chainlink, Pyth)         (Uniswap, dYdX) 
+
+### Key Components
+1. Frontend: React-based UI with TradingView charts and wallet management.
+2. Backend: Rust (high-frequency trading) + Python (analytics).
+3. Smart Contracts: Solidity modules for Uniswap V3/dYdX interactions.
+4. Infrastructure: AWS ECS, The Graph (indexing), and Flashbots (MEV protection).
+
+## Core Technical Features
+### Cross-Protocol Arbitrage Engine
+- Mechanism:
+    - Monitors price gaps between Uniswap V3 (spot) and dYdX (perpetuals) using Chainlink/Pyth oracles.
+    - Executes atomic "buy-low, sell-high" trades via flash loans when spreads exceed user-defined thresholds (e.g., >5%).
+
+Code Snippet (Rust):
+```
+async fn arbitrage_check(token: Address) -> Result<(), ArbError> {
+    let uni_price = fetch_uniswap_price(&token).await?;
+    let dydx_price = fetch_dydx_price(&token).await?;
+    if (dydx_price - uni_price) / uni_price > 0.05 {
+        execute_arbitrage(token, uni_price, dydx_price).await?;
+    }
+    Ok(())
+}
+```
+
+### MEV Resistance Layer
+- Techniques:
+    - Private Transactions: Uses Flashbots Relay to bypass public mempools.
+    - Obfuscation: Randomizes trade sizes and delays (1–5 blocks).
+    - Gas Optimization: Dynamic fee bidding based on Ethereum base fee.
+
+
+Smart Contract (Solidity):
+```
+function mevProtectedSwap(address token, uint256 amount) external {
+    require(flashbots.isProtected(tx.origin), "Only Flashbots");
+    IERC20(token).transfer(msg.sender, amount);
+}
+```
+
+### Honeypot Detection Module
+- Checks:
+    - Liquidity Lock: Verifies Unicrypt/Team Finance locks via on-chain calls.
+    - Transfer Tax: Static analysis of ERC-20 transfer() functions.
+    - Ownership Centralization: Flags tokens where top 5 wallets hold >50% supply.
+
+Python Pseudocode:
+```
+def is_honeypot(token_address):
+    if not check_liquidity_lock(token_address):
+        return True
+    if get_transfer_tax(token_address) > 5:  # 5% max tax
+        return True
+    return False
+```
+
+## Performance Metrics
 
 ## How to connect to telegram
 In just a few steps—creating a bot via BotFather, installing the python-telegram-bot library, implementing polling or webhooks, and deploying your integration—you can push ArbiDeFi arbitrage alerts to your Telegram channel or group. Register the bot with BotFather to get your token . Install the official python-telegram-bot package via pip. Choose between getUpdates polling or webhook-based delivery to receive updates. Then, in your scanner code, call ```bot.send_message(chat_id, text)``` to dispatch alerts. For production, secure your webhook URL with HTTPS and follow security best practices for Telegram bots
