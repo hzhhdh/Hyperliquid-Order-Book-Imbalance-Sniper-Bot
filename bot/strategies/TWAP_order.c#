@@ -1,0 +1,20 @@
+using System.Net.Http;
+using System.Threading.Tasks;
+
+public class TWAPEngine {
+    private HttpClient _client = new HttpClient();
+    
+    public async Task ExecuteTWAP(string symbol, decimal totalQty, int intervals) {
+        decimal chunk = totalQty / intervals;
+        for (int i = 0; i < intervals; i++) {
+            var order = new {
+                symbol,
+                side: "BUY",
+                quantity: chunk,
+                type: "MARKET"
+            };
+            await _client.PostAsync("https://api.binance.com/order", new StringContent(order.ToString()));
+            await Task.Delay(300_000); // 5-minute intervals
+        }
+    }
+}
