@@ -57,7 +57,7 @@ Click Create Rule in the center of the dashboard to open the drag-and-drop rule 
 ### Analyze or Deploy Smart Contracts
 Need to interact with a smart contract? Go to the Smart Contract tab in the sidebar. Paste the contract address or code into the input field, then click Start Analysis to check for vulnerabilities using OpenZeppelin Defender. If you're deploying a new contract (e.g., for a DAO voting system), paste the Solidity code, hit Deploy, and the app handles compilation and deployment via Remix integration. For example, deploy a governance contract and set it to auto-vote based on your rules.
 
-<p align="center"><img width="800" height="700" src="defidash/settings2.png" alt="Bot interface" /></p>
+<p align="center"><img width="700" height="700" src="defidash/settings2.png" alt="Bot interface" /></p>
 
 ### Kick Off Automation
 Once your rules are set, click Run Automation in the top toolbar. The app starts executing your strategies in real-time, like harvesting Curve rewards or staking ETH on Lido when gas fees are low. Need a break? Hit Pause Automation to stop transactions without losing your settings.
@@ -71,7 +71,7 @@ Hit Risk Scan in the sidebar to check your wallets and contracts for red flags. 
 ### Bridge Assets Across Chains
 Click Cross-Chain Bridge in the sidebar to move assets between chains. Enter the amount and select the source/destination (e.g., 1 ETH from Ethereum to Solana). The app picks the best bridge (LayerZero or Wormhole) based on fees and speed, then executes the transfer.
 
-<p align="center"><img width="800" height="700" src="defidash/settings1.png" alt="Bot interface" /></p>
+<p align="center"><img width="700" height="700" src="defidash/settings1.png" alt="Bot interface" /></p>
 
 ### Harvest Rewards Effortlessly
 Press Harvest Rewards on the right widget to collect and reinvest rewards from protocols like Lido or SushiSwap. For example, it grabs your CRV rewards and compounds them back into a Curve pool.
