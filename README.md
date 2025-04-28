@@ -22,25 +22,25 @@ The app connects to major DeFi protocols (think Uniswap, Aave, EigenLayer, Curve
 
 ## Key Functions
 1. Yield Farming Optimization
-Automatically scans protocols like Uniswap, Curve, and Yearn to find the highest APYs, then reallocates your assets to maximize returns while dodging impermanent loss. It's like having a yield farmer who never sleeps.
+- Automatically scans protocols like Uniswap, Curve, and Yearn to find the highest APYs, then reallocates your assets to maximize returns while dodging impermanent loss. It's like having a yield farmer who never sleeps.
 
 2. Portfolio and Treasury Management
-Tracks your assets across multiple wallets and chains, rebalancing your portfolio or DAO treasury based on market conditions. Get a real-time snapshot of your holdings, yields, and risks in one clean dashboard.
+- Tracks your assets across multiple wallets and chains, rebalancing your portfolio or DAO treasury based on market conditions. Get a real-time snapshot of your holdings, yields, and risks in one clean dashboard.
 
 3. Smart Contract Automation
-Executes smart contract actions-like staking on Lido or repaying Aave loans-based on your custom rules. You can even deploy or analyze contracts directly in the app.
+- Executes smart contract actions-like staking on Lido or repaying Aave loans-based on your custom rules. You can even deploy or analyze contracts directly in the app.
 
 4. Risk and Security Monitoring
-Scans your wallets and contracts for vulnerabilities using OpenZeppelin Defender, alerting you to phishing scams or risky positions before they become problems.
+- Scans your wallets and contracts for vulnerabilities using OpenZeppelin Defender, alerting you to phishing scams or risky positions before they become problems.
 
 5. Cross-Chain Bridging
-Moves assets between chains (e.g., Ethereum to Solana) using bridges like LayerZero or Wormhole, picking the cheapest and fastest routes automatically.
+- Moves assets between chains (e.g., Ethereum to Solana) using bridges like LayerZero or Wormhole, picking the cheapest and fastest routes automatically.
 
 6. Reward Harvesting
-Collects and reinvests rewards from protocols like Curve, SushiSwap, or Lido, so you don't miss out on compounding gains.
+- Collects and reinvests rewards from protocols like Curve, SushiSwap, or Lido, so you don't miss out on compounding gains.
 
 7. AI-Driven Insights
-Uses lightweight machine learning to analyze market trends and suggest strategies, like when to swap tokens or adjust collateral.
+- Uses lightweight machine learning to analyze market trends and suggest strategies, like when to swap tokens or adjust collateral.
 
 ## How It Works
 DeFi AutoPilot's interface is clean, intuitive, and packed with everything you need to take control of your DeFi operations. Here's how you'd use it, step by step, with examples of real tasks:
