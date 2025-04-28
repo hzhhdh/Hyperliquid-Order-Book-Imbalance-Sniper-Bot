@@ -2,7 +2,7 @@
 
 Hey there, DeFi trailblazers! If you’re tired of juggling yield farming, portfolio tracking, and smart contract management in the wild world of decentralized finance, let me introduce you to DeFi AutoPilot—your new best friend for automating DeFi operations like a pro. As someone who’s spent countless hours navigating the ups and downs of DeFi, I can tell you this desktop app is a game-changer. It’s designed to save you time, boost your returns, and keep your assets secure, all while being as easy to use as your favorite crypto wallet.
 
-<p align="center"><img width="1000" height="700" src="defidash/screen.png" alt="Bot interface" /></p>
+<p align="center"><img width="800" height="500" src="defidash/screen.png" alt="Bot interface" /></p>
 
 DeFi AutoPilot is a powerful, non-custodial desktop application that automates the heavy lifting of DeFi for project owners, DAO operators, liquidity providers, and portfolio managers. Whether you're optimizing yields on Uniswap, managing Aave loans, or staking ETH on Lido, this app takes the manual grind out of the equation. It's like having a 24/7 DeFi assistant that monitors markets, executes strategies, and keeps your portfolio humming across multiple blockchains-Ethereum, Solana, Binance Smart Chain, and beyond.
 
