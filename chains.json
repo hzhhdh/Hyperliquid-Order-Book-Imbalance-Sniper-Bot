@@ -1,7 +1,0 @@
-{
-    "1": {
-        "name": "Ethereum",
-        "rpc": "https://eth.llamarpc.com",
-        "explorer": "https://etherscan.io"
-    }
-}
