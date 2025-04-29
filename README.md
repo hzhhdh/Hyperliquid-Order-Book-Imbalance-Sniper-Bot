@@ -1,6 +1,6 @@
 # DeFi Auto Trader
 
-<p align="center"><img width="900" height="500" src="defidash/screen.png" alt="Bot interface" /></p>
+<p align="center"><img width="900" height="500" src="dash.jpg" alt="Bot interface" /></p>
 
 ## 📥 Installation & Setup
 ### macOS
