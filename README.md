@@ -31,14 +31,14 @@
 - Aggregates DAO sentiment from Discord, Telegram, and on-chain discussions to gauge community support for proposals.
 
 ### 4. Instant On-Chain Trading
-Bypasses slow wallet interfaces (e.g., MetaMask) by interacting directly with blockchain nodes for near-instant trade execution.
-Supports multi-chain trading (Ethereum, Solana, Polygon, etc.) with user-configurable RPC endpoints for low-latency access.
-Prioritizes transactions with dynamic gas optimization, balancing speed and cost based on network congestion.
+- Bypasses slow wallet interfaces (e.g., MetaMask) by interacting directly with blockchain nodes for near-instant trade execution.
+- Supports multi-chain trading (Ethereum, Solana, Polygon, etc.) with user-configurable RPC endpoints for low-latency access.
+- Prioritizes transactions with dynamic gas optimization, balancing speed and cost based on network congestion.
 
 ### 5. Risk Mitigation & Scam Protection
-Tracks token contracts for suspicious activities (e.g., liquidity rug pulls, sudden developer wallet dumps, or contract vulnerabilities).
-Automatically sells or pauses trading if predefined risk thresholds are triggered (e.g., >15% price drop, liquidity pool drained).
-Integrates with on-chain audit databases (e.g., Certik, Hacken) to flag unaudited or high-risk contracts before trading.
+- Tracks token contracts for suspicious activities (e.g., liquidity rug pulls, sudden developer wallet dumps, or contract vulnerabilities).
+- Automatically sells or pauses trading if predefined risk thresholds are triggered (e.g., >15% price drop, liquidity pool drained).
+- Integrates with on-chain audit databases (e.g., Certik, Hacken) to flag unaudited or high-risk contracts before trading.
 
 ### 6. Social Signal Monitoring
 - Scans Telegram, Discord, and X posts for token mentions, contract addresses, or launch announcements, executing trades based on user-defined criteria.
