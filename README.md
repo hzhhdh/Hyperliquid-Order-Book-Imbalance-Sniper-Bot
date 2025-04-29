@@ -72,46 +72,55 @@ To maximize utility, DeFi Trading Bot should connect to the following DeFi proto
 1. Uniswap (Ethereum)
 Uniswap is the leading DEX by TVL ($19B+ across DEXs, with Uniswap dominating) and trading volume, ideal for token sniping and liquidity provision. Its V3 model supports concentrated liquidity, aligning with PulseTrader’s IL mitigation strategies.
 > Snipe new ERC-20 tokens, provide liquidity to high-volume pools, and monitor pair creation events.
+
 > Integrate with Uniswap V3 smart contracts (NonfungiblePositionManager for liquidity) and use Uniswap’s Subgraph for real-time pair data.
 
 2. PancakeSwap (BNB Chain)
 PancakeSwap offers low fees and high yields on BNB Chain, making it cost-effective for yield farming and token launches. Its CAKE token governance supports PulseTrader’s DAO-aware trading.
 > Snipe BSC token launches, stake in Syrup Pools, and automate CAKE reward reinvestment.
+
 > Connect to PancakeSwap’s AMM contracts and use BscScan APIs for transaction monitoring.
 
 3. SushiSwap (Multi-Chain)
 SushiSwap’s multi-chain support (Ethereum, Arbitrum, Fantom) and yield farming options complement PulseTrader’s cross-chain trading and liquidity strategies. Its community-driven governance aligns with DAO monitoring.
 > Farm SUSHI rewards, trade across chains, and monitor governance proposals via SUSHI token votes.
+
 > Integrate with SushiSwap’s MasterChef contracts and use cross-chain APIs like Axelar for interoperability.
 
 4. Aave (Ethereum, Polygon)
 Aave’s lending and borrowing protocols are ideal for liquidity providers seeking passive income. Flash loans support advanced trading strategies (e.g., arbitrage).
 > Lend assets for interest, borrow for leveraged trading, and execute flash loan arbitrage.
+
 > Interface with Aave’s LendingPool contracts and use Aave’s Subgraph for real-time lending data.
 
 5. Curve Finance (Ethereum, Optimism)
 Curve’s stablecoin-focused AMM offers low-slippage trading and reduced IL, perfect for conservative liquidity providers.
 > Provide liquidity to stablecoin pools and automate rebalancing to minimize IL.
+
 > Connect to Curve’s StableSwap contracts and use Curve’s API for pool metrics.
 
 6. EnginLayer (Emerging Layer-2)
 As an emerging Layer-2 solution (assumed similar to Optimism or Arbitrum), EnginLayer likely offers low-cost transactions, suitable for high-frequency trading and liquidity provision.
 > Snipe tokens on Layer-2 DEXs and provide liquidity to early pools.
+
 > Use Layer-2 RPC endpoints (e.g., Alchemy Optimism) and monitor EnginLayer-specific DEX contracts.
 
 7. Compound (Ethereum)
 Compound’s lending protocol complements Aave, offering competitive interest rates for liquidity providers.
 > Lend assets for interest and monitor COMP governance for price signals.
+
 > Integrate with Compound’s Comptroller contracts and use Compound’s API for market data.
 
 8. Balancer (Ethereum, Polygon)
 Balancer’s custom-weighted pools allow flexible liquidity strategies, reducing IL for diverse asset portfolios.
 > Provide liquidity to multi-asset pools and automate portfolio rebalancing.
+
 > Connect to Balancer’s Vault contracts and use Balancer’s Subgraph for pool analytics.
 
 9. Lido Finance (Ethereum, Solana)
 Lido’s liquid staking enables users to earn staking rewards while maintaining liquidity, appealing to DAO owners and investors.
 > Stake ETH for stETH and use stETH in DeFi pools for compounded yields.
+
 > Interface with Lido’s staking contracts and use Lido’s API for reward tracking.
 
 ## APIs
