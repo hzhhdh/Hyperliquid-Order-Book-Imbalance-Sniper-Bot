@@ -69,49 +69,49 @@
 ## Integration with DeFi Projects
 To maximize utility, DeFi Trading Bot should connect to the following DeFi protocols, selected for their liquidity, user base, and feature alignment with the software’s goals. Each integration is justified based on functionality and technical feasibility.
 
-1. Uniswap (Ethereum)
+### 1. Uniswap (Ethereum)
 Uniswap is the leading DEX by TVL ($19B+ across DEXs, with Uniswap dominating) and trading volume, ideal for token sniping and liquidity provision. Its V3 model supports concentrated liquidity, aligning with PulseTrader’s IL mitigation strategies.
 > Snipe new ERC-20 tokens, provide liquidity to high-volume pools, and monitor pair creation events.
 
 > Integrate with Uniswap V3 smart contracts (NonfungiblePositionManager for liquidity) and use Uniswap’s Subgraph for real-time pair data.
 
-2. PancakeSwap (BNB Chain)
+### 2. PancakeSwap (BNB Chain)
 PancakeSwap offers low fees and high yields on BNB Chain, making it cost-effective for yield farming and token launches. Its CAKE token governance supports PulseTrader’s DAO-aware trading.
 > Snipe BSC token launches, stake in Syrup Pools, and automate CAKE reward reinvestment.
 
 > Connect to PancakeSwap’s AMM contracts and use BscScan APIs for transaction monitoring.
 
-3. SushiSwap (Multi-Chain)
+### 3. SushiSwap (Multi-Chain)
 SushiSwap’s multi-chain support (Ethereum, Arbitrum, Fantom) and yield farming options complement PulseTrader’s cross-chain trading and liquidity strategies. Its community-driven governance aligns with DAO monitoring.
 > Farm SUSHI rewards, trade across chains, and monitor governance proposals via SUSHI token votes.
 
 > Integrate with SushiSwap’s MasterChef contracts and use cross-chain APIs like Axelar for interoperability.
 
-4. Aave (Ethereum, Polygon)
+### 4. Aave (Ethereum, Polygon)
 Aave’s lending and borrowing protocols are ideal for liquidity providers seeking passive income. Flash loans support advanced trading strategies (e.g., arbitrage).
 > Lend assets for interest, borrow for leveraged trading, and execute flash loan arbitrage.
 
 > Interface with Aave’s LendingPool contracts and use Aave’s Subgraph for real-time lending data.
 
-5. Curve Finance (Ethereum, Optimism)
+### 5. Curve Finance (Ethereum, Optimism)
 Curve’s stablecoin-focused AMM offers low-slippage trading and reduced IL, perfect for conservative liquidity providers.
 > Provide liquidity to stablecoin pools and automate rebalancing to minimize IL.
 
 > Connect to Curve’s StableSwap contracts and use Curve’s API for pool metrics.
 
-6. EnginLayer (Emerging Layer-2)
+### 6. EnginLayer (Emerging Layer-2)
 As an emerging Layer-2 solution (assumed similar to Optimism or Arbitrum), EnginLayer likely offers low-cost transactions, suitable for high-frequency trading and liquidity provision.
 > Snipe tokens on Layer-2 DEXs and provide liquidity to early pools.
 
 > Use Layer-2 RPC endpoints (e.g., Alchemy Optimism) and monitor EnginLayer-specific DEX contracts.
 
-7. Compound (Ethereum)
+### 7. Compound (Ethereum)
 Compound’s lending protocol complements Aave, offering competitive interest rates for liquidity providers.
 > Lend assets for interest and monitor COMP governance for price signals.
 
 > Integrate with Compound’s Comptroller contracts and use Compound’s API for market data.
 
-8. Balancer (Ethereum, Polygon)
+### 8. Balancer (Ethereum, Polygon)
 Balancer’s custom-weighted pools allow flexible liquidity strategies, reducing IL for diverse asset portfolios.
 > Provide liquidity to multi-asset pools and automate portfolio rebalancing.
 
@@ -126,38 +126,38 @@ Lido’s liquid staking enables users to earn staking rewards while maintaining 
 ## APIs
 DeFi Trading Bot leverage the following APIs and tools
 
-1. Blockchain Data APIs
+### 1. Blockchain Data APIs
 - Alchemy: Provides WebSocket and REST APIs for real-time blockchain events (e.g., new Uniswap pairs, Aave lending rates). Supports Ethereum, Polygon, and Layer-2s.
 - Infura: Offers reliable RPC endpoints for Ethereum and EVM-compatible chains, essential for direct node interaction.
 - The Graph: Subgraphs for Uniswap, Aave, SushiSwap, and Curve provide indexed on-chain data (e.g., pool stats, governance events).
 - BscScan API: Tracks transactions and contract events on BNB Chain for PancakeSwap integration.
 
-2. Price Oracles
+### 2. Price Oracles
 - Chainlink: Supplies accurate price feeds for tokens, critical for IL calculations and trading decisions.
 - Uniswap V3 TWAP Oracle: Provides time-weighted average prices for on-chain trading strategies.
 - CoinGecko/CoinMarketCap API: Tracks token prices and volumes for risk monitoring and social signal validation.
 
-3. Social Media & Sentiment Analysis
+### 3. Social Media & Sentiment Analysis
 - Twitter API (X Platform): Monitors token mentions and influencer activity on X, filtered by reputation.
 - Telegram/Discord APIs: Scrapes contract addresses and launch announcements from DeFi channels.
 - Sentiment Analysis Libraries: Use Hugging Face or NLTK for NLP-based sentiment scoring of social signals.
 
-4. Contract Audit & Risk APIs
+### 4. Contract Audit & Risk APIs
 - Certik API: Checks contract audit status to flag risky tokens.
 - De.Fi Scanner: Analyzes contract vulnerabilities in real-time, enhancing scam protection.
 - Etherscan API: Monitors developer wallet activity and contract interactions for rug pull detection.
 
-5. Cross-Chain Interoperability
+### 5. Cross-Chain Interoperability
 - Axelar API: Facilitates cross-chain swaps for SushiSwap’s multi-chain functionality.
 - LayerZero: Enables messaging between EVM and non-EVM chains (e.g., Solana for Lido integration).
 - Celer cBridge API: Supports low-cost cross-chain asset transfers for trading.
 
-6. Governance Data
+### 6. Governance Data
 - Snapshot API: Tracks DAO proposals and voting outcomes for SushiSwap, Aave, and Compound.
 - Tally API: Provides governance metrics for on-chain voting signals.
 - Boardroom API: Aggregates governance data across multiple DAOs for sentiment analysis.
 
-7. Trading & Strategy Tools
+### 7. Trading & Strategy Tools
 
 - 1inch API: Aggregates liquidity from Uniswap, SushiSwap, and others for optimal trade execution.
 - DEXTools API: Tracks new pools and liquidity events for sniping and risk analysis.
