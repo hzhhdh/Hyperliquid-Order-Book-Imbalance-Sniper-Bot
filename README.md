@@ -1,5 +1,5 @@
 # DeFi Multi Chain Trading Bot
-A powerful, multichain cryptocurrency trading bot designed for crypto investors managing portfolios up to $200,000. This bot automates DCA (Dollar-Cost Averaging), sniping, and cross-chain trading across Ethereum, Arbitrum, BSC, Base, and Optimism. Built with Python 3.8+, it integrates with Wormhole, Paraswap v5, 1inch, AAVE, and top DEXs like Uniswap, SushiSwap, and PancakeSwap. With MEV protection via Flashbots and multi-node support (Infura, Alchemy, QuickNode), it ensures secure, low-slippage trades. All settings are customizable via config.json, with logging to trades.log and Telegram notifications. 📈
+A powerful, multichain cryptocurrency trading bot designed for crypto investors managing portfolios. This bot automates DCA (Dollar-Cost Averaging), sniping, and cross-chain trading across Ethereum, Arbitrum, BSC, Base, and Optimism. Built with Python 3.8+, it integrates with Wormhole, Paraswap v5, 1inch, AAVE, and top DEXs like Uniswap, SushiSwap, and PancakeSwap. With MEV protection via Flashbots and multi-node support (Infura, Alchemy, QuickNode), it ensures secure, low-slippage trades. All settings are customizable via config.json, with logging to trades.log and Telegram notifications. 📈
 
 <p align="center"><img width="900" height="500" src="dash.png" alt="Bot interface" /></p>
 User-frendly Interface
