@@ -35,14 +35,14 @@ User-frendly Interface
 
 Staking Tool supports staking for multiple cryptocurrencies in one intuitive interface. Choose from:
 
-- Ethereum (ETH): Stake with a current APY of 5.2%.
-- Cardano (ADA): Delegate with an APY of 4.8%.
-- Solana (SOL): Earn up to 7.1% APY.
-- Polkadot (DOT): Enjoy high yields with a 12.3% APY.
-- Cosmos (ATOM): Stake with an APY of 14.5%.
-- Avalanche (AVAX): Earn up to 8.2% APY.
-- Tezos (XTZ): Delegate with an APY of 5.6%.
-- Algorand (ALGO): Stake with an APY of 6.0%.
+- Ethereum (ETH)
+- Cardano (ADA)
+- Solana (SOL)
+- Polkadot (DOT)
+- Cosmos (ATOM)
+- Avalanche (AVAX)
+- Tezos (XTZ)
+- Algorand (ALGO)
 
 ### 2. Real-Time Stake Monitoring
 
@@ -51,7 +51,7 @@ Stay informed with live metrics, including:
 - Current Stakes: Monitor your staked assets
 - Rewards: View accumulated rewards 
 - Total Value Locked (TVL): Track your portfolio's contribution.
-- Network Status: Ensure stability with real-time update).
+- Network Status: Ensure stability with real-time update.
 
 ### 3. Advanced Analytics
 
