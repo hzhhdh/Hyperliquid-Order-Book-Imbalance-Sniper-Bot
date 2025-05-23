@@ -1,6 +1,6 @@
 # DeFi Multi Chain Trading Bot
 
-<p align="center"><img width="900" height="500" src="dash.png" alt="Bot interface" /></p>
+<p align="center"><img width="900" height="500" src="dashboard.png" alt="Bot interface" /></p>
 User-frendly Interface
 
 ## Docs
