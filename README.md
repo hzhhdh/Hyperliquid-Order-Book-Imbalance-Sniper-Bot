@@ -48,24 +48,24 @@ Staking Tool supports staking for multiple cryptocurrencies in one intuitive int
 
 Stay informed with live metrics, including:
 
-- Current Stakes: Monitor your staked assets (e.g., 10 ETH, 5000 ADA, 200 SOL, 1000 DOT, 800 ATOM, 600 AVAX, 2000 XTZ, 3000 ALGO).
-- Rewards: View accumulated rewards (e.g., 0.52 ETH, 125 ADA, 4.8 SOL, 22 DOT, 20 ATOM, 12 AVAX, 35 XTZ, 45 ALGO monthly).
-- Total Value Locked (TVL): Track your portfolio's contribution to a $7.85M TVL.
-- Network Status: Ensure stability with real-time updates (e.g., "Stable" status).
+- Current Stakes: Monitor your staked assets
+- Rewards: View accumulated rewards 
+- Total Value Locked (TVL): Track your portfolio's contribution.
+- Network Status: Ensure stability with real-time update).
 
 ### 3. Advanced Analytics
 
 Make data-driven decisions with:
 
 - Performance Charts: Visualize rewards over time using integrated Chart.js graphs.
-- Projected Yield: Forecast returns (e.g., 7.5% annualized yield).
-- Estimated Rewards: Calculate earnings (e.g., $1,850 in 30 days).
+- Projected Yield: Forecast returns.
+- Estimated Rewards: Calculate earnings.
 
 ### 4. Automated Pool Management
 
 Maximize profits with:
 
-- Pool Selection: Choose from high-yield pools (e.g., Ethereum Pool #1 at 5.5% APY, Polkadot Pool #4 at 12.8% APY, Cosmos Pool #2 at 15.0% APY).
+- Pool Selection: Choose from high-yield pools.
 - Auto-Optimization: Enable automatic pool switching to the highest APY, reducing manual effort.
 
 ### 5. User-Friendly Interface
@@ -103,7 +103,7 @@ Import your non-custodial wallet (e.g., MetaMask, Ledger, Trezor, Keplr, or Exod
 - Algorand (Algorand SDK, AlgoExplorer)
 
 ### 3. Select Cryptocurrency and Amount
-Choose a cryptocurrency (ETH, ADA, SOL, DOT, ATOM, AVAX, XTZ, or ALGO) from the dropdown menu and enter the amount to stake (e.g., 10 ETH). The app validates your input to ensure sufficient balance.
+Choose a cryptocurrency (ETH, ADA, SOL, DOT, ATOM, AVAX, XTZ, or ALGO) from the dropdown menu and enter the amount to stake. The app validates your input to ensure sufficient balance.
 
 ### 4. Choose or Optimize Pools
 Stake through leading platforms, including:
@@ -123,13 +123,13 @@ Stake through leading platforms, including:
 - Tezos: Tezos Native Staking (via bakers), Plenty DeFi.
 
 Algorand: Algorand Governance, Yieldly (liquidity staking).
-Manually select from available staking pools or enable auto-optimization to allocate assets to the highest-yielding pools (e.g., Cosmos Pool #2 at 15.0% APY).
+Manually select from available staking pools or enable auto-optimization to allocate assets to the highest-yielding pools.
 
 ### 5. Monitor and Analyze
 View real-time metrics on the monitoring panel, including stakes, rewards, APY, and TVL. Use the analytics panel to track performance and forecast earnings, powered by data from Etherscan, Cardano Explorer, Solana Beach, Subscan, Cosmoscan, Avascan, TzStats, and AlgoExplorer.
 
 ### 6. Manage Rewards
-Reinvest rewards automatically or withdraw them to your wallet. The app calculates estimated rewards (e.g., $1,850 in 30 days) based on current stakes and APY.
+Reinvest rewards automatically or withdraw them to your wallet. The app calculates estimated rewards based on current stakes and APY.
 
 ### 7. Stay Updated
 Receive live updates on network status and TVL, ensuring your stakes are secure and optimized. Refresh metrics manually to get the latest data from blockchain APIs.
@@ -144,7 +144,7 @@ Receive live updates on network status and TVL, ensuring your stakes are secure 
 
 - Automation: Implements algorithms to select pools with the highest APY, reducing manual intervention.
 
-- Metrics: Displays demo metrics, such as 10 ETH staked, 0.52 ETH rewards, and $7.85M TVL, mimicking real-world data.
+- Metrics: Displays metrics with real-world data.
 
 ## Risks to Consider
 
