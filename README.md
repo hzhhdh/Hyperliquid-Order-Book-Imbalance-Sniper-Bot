@@ -4,7 +4,7 @@ Staking Tool is a powerful, user-friendly desktop application designed for crypt
 
 > Staking Tool is the go-to crypto staking software for high-net-worth individuals and institutional investors. Whether you're new to staking or a seasoned DeFi enthusiast, our app simplifies the process while offering robust features to optimize your returns. 
 
-<p align="center"><img width="900" height="500" src="dashboard.png" alt="Bot interface" /></p>
+<p align="center"><img width="900" height="500" src="dashboardd.png" alt="Bot interface" /></p>
 User-frendly Interface
 
 ## Docs
