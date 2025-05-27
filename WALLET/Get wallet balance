@@ -1,4 +1,0 @@
-export async function getWalletBalance(address: string, chain: string): Promise<number> {
-  // Placeholder: Fetch balance via blockchain API
-  return 100; // Fake balance
-}
