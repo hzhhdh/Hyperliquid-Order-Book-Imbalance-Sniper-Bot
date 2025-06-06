@@ -1,6 +1,6 @@
 # Crypto Pool Analytics
 
-<p align="center"><img width="900" height="500" src="dashboard.png" alt="Bot interface" /></p>
+<p align="center"><img width="700" height="500" src="dashboard.png" alt="Bot interface" /></p>
 User-frendly Interface
 
 Crypto Pool Analytics, the desktop tool for crypto traders, investors, market makers, token creators, and liquidity providers. This, locally-run application delivers real-time blockchain analytics with customizable dashboards, supporting major chains like Ethereum, BNB Chain, Solana, Polygon, Arbitrum, Optimism, Avalanche, Base, Fantom, and Cosmos.
