@@ -1,7 +1,7 @@
 # ArbifyBot
 ArbifyBot is a powerful and user-friendly cryptocurrency trading bot designed for arbitrage opportunities between centralized exchanges (CEX) like Binance and Kraken and decentralized exchanges (DEX) like Uniswap and PancakeSwap. ArbifyBot enables users to monitor price spreads, execute automated trades, and analyze performance, catering to both small-scale traders (starting with $100) and high-net-worth investors ($1M+).
 
-<p align="center"><img width="700" height="500" src="arbifyinterface.png" alt="Bot interface" /></p>
+<p align="center"><img width="1400" height="900" src="arbifyinterface.png" alt="Bot interface" /></p>
 
 ## Docs
 ### [Read](https://selenium-finance.gitbook.io/hyperliquid-trading-bot-documentation/)
