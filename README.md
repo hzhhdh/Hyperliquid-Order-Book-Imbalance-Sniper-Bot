@@ -28,10 +28,6 @@ Royen Bitcoin Analytic is an open-source, enterprise-grade tool for real-time Bi
 - Network health: Analyze hash rate, mining pool distribution, and HODL Waves.
 - Key metrics: SOPR, MVRV, UTXO age distribution for market sentiment analysis.
 
-### Micro-Arbitrage for Small Capital:
-- Targets low-cap tokens on DEX for small-scale traders ($100–$1000) with minimal profit thresholds ($5+).
-- Prioritizes low-fee networks (Polygon, Solana) to maximize returns.
-
 ### Integrated Insights
 - Correlation analysis: Combine mempool and on-chain data to identify market signals.
 - Historical trends: Compare current activity with past data (7–30 days).
