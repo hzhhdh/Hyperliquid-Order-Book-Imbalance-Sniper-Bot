@@ -1,6 +1,6 @@
 # Royen Bitcoin Analytic
 
-Royen Bitcoin Analytic is an open-source, enterprise-grade tool for real-time Bitcoin mempool monitoring and on-chain analytics. Designed for investors, traders, and node operators, it provides actionable insights into market trends, whale movements, and network activity. Track large transactions, analyze mempool dynamics, and leverage on-chain metrics to make informed decisions.
+Royen Bitcoin Analytic is an open-source, enterprise-grade tool designed for Bitcoin investors, traders, and node operators. It delivers real-time mempool monitoring and on-chain analytics to provide actionable insights into Bitcoin whale movements, market trends, and network activity. Track large transactions, analyze mempool dynamics, and leverage key metrics like SOPR, MVRV, and HODL Waves to make informed investment decisions.
 
 ## 📥 Installation & Setup
 ### macOS
