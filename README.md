@@ -1,5 +1,5 @@
 
-<p align="center"><img width="900" height="600" src="dashinter.png" alt="Bot interface" /></p>
+<p align="center"><img width="800" height="600" src="dashinter.png" alt="Bot interface" /></p>
 
 ## 📥 Installation & Setup
 ### macOS
