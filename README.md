@@ -2,7 +2,7 @@
 ## Overview
 The **Solana Auto Trading Bot** is a Python-based automated trading application designed for day trading on Solana decentralized exchanges (DEXs). It features a minimalist, professional graphical user interface enabling users to configure trading strategies, manage wallets, and monitor trades in real-time. The bot supports trading on **Raydium**, **Orca**, **Pump.fun**, and **Meteora**, leveraging their respective SDKs or APIs for market and limit order execution. It incorporates advanced technical indicators (RSI, MACD, Bollinger Bands) to generate buy/sell signals, filters out potential honeypot tokens, and provides Telegram notifications and log exports for transparency.
 
-<p align="center"><img width="950" height="600" src="dashbot.png" alt="Bot interface" /></p>
+<p align="center"><img width="850" height="600" src="dashbot.png" alt="Bot interface" /></p>
 
 The bot is designed for traders seeking to capitalize on short-term price movements in Solana-based tokens, particularly those launched on high-activity platforms like Pump.fun. It runs in an asynchronous loop, scanning liquidity pools every 5 minutes, analyzing token holder distributions, and executing trades based on user-defined parameters.
 
