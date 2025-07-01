@@ -2,7 +2,7 @@
 ## Overview
 Designed for traders chasing explosive profits in Solana's memecoin and SPL token markets, this bot leverages high-speed automation, advanced analytics, and Jito bundle integration to maximize returns while protecting against Miner Extractable Value (MEV) attacks. Optimized for high-volume trading, it targets volatile tokens on platforms like Pump.fun, Raydium, and Orca, ensuring rapid execution and robust risk management.
 
-<p align="center"><img width="950" height="650" src="dashbotinter.png" alt="Bot interface" /></p>
+<p align="center"><img width="950" height="650" src="dashboard1.png" alt="Bot interface" /></p>
 
 The bot is designed for traders seeking to capitalize on short-term price movements in Solana-based tokens, particularly those launched on high-activity platforms like Pump.fun. It runs in an asynchronous loop, scanning liquidity pools every 5 minutes, analyzing token holder distributions, and executing trades based on user-defined parameters.
 
@@ -34,6 +34,8 @@ Trade efficiently across top Solana DEXs with optimized SDKs:
 - **Priority Transactions**: Submits trades via Jito bundles to Solana validators, ensuring high-priority execution and reducing MEV risks like front-running.
 - **Bundle Configuration**: Supports up to 5 transactions per bundle with customizable tip accounts (default: 0.01 SOL per bundle).
 - **MEV Mitigation**: Detects and avoids pools with high MEV activity using Solscan and Dexscreener data.
+
+<p align="center"><img width="950" height="650" src="dashboard2.png" alt="Bot interface" /></p>
 
 ### 3. Advanced Trading Strategies for Memecoins
 - **Liquidity Pool Scanning**: Queries Dexscreener API every 60 seconds to identify high-liquidity pools (default: >$50,000 USD) with explosive volume growth (default: >100% in 30-minute vs. 4-hour volume).
@@ -71,6 +73,8 @@ Trade efficiently across top Solana DEXs with optimized SDKs:
 - **High-Throughput Design**: Handles 100+ trades per minute with <100ms latency.
 - **Error Handling**: Robust try-except blocks with retry logic for failed transactions (up to 3 retries).
 - **Jito Client**: Integrates `jito-sdk` for bundle submission and transaction monitoring.
+
+<p align="center"><img width="950" height="650" src="dashboard3.png" alt="Bot interface" /></p>
 
 ## Technical Details
 - **Language**: Python 3.11+, Rust (for Jito bundle processing)
