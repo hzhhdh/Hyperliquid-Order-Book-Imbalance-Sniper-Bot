@@ -26,7 +26,7 @@ Optimized for speed, reliability, and security, the bot includes input validatio
 ## User-Friendly GUI
 - Bot Management: Start/stop the bot with a single click.
 - Add Meme Coins: Input token symbol, address, and network (Ethereum, BNB Chain, Base, Solana) with address validation.
-- Contract Address Configuration: Set addresses for AerodromeFi and Raydium with validation (EVM via web3.utils.isAddress, Solana via PublicKey).
+- Contract Address Configuration: Set addresses for AerodromeFi and Raydium with validation (EVM via `web3.utils.isAddress`, Solana via PublicKey).
 - Trading Parameters:
     - Minimum Profit: e.g., 0.5%.
     - Maximum Slippage: e.g., 0.1%.
@@ -37,7 +37,7 @@ Optimized for speed, reliability, and security, the bot includes input validatio
 - Real-Time Logs: Displays the last 10 logs, e.g., “Added meme coin: WIF” or “Arbitrage: Profit $1,600 on $100,000 order.”
 
 ## Raydium Integration (Solana)
-- Full integration with @raydium-io/raydium-sdk for swaps.
+- Full integration with `@raydium-io/raydium-sdk` for swaps.
 - Automatic pool data loading via Raydium API.
 - Supports tokens like WIF and BONK with up-to-date pool addresses.
 
@@ -50,12 +50,12 @@ Optimized for speed, reliability, and security, the bot includes input validatio
 - Monitors Solana via Jito ShredStream.
 
 ## Contract Addresses
-- Uniswap V3: 0xE592427A0AEce92De3Edee1F18E0157C05861564 (Ethereum).
-- Uniswap V4: 0x1f9840a85d5aF5B72077a8F9c8f7a8C4b7c0F0E (Ethereum).
-- PancakeSwap V3: 0x13f4EA83D0bd40E75C8222255bc855a974568Dd4 (BNB Chain).
-- Curve: 0xD51a44d3FaE010294C616388b506AcdA1bfAAE46 (Ethereum).
-- AerodromeFi: 0x420DD381b31aEf6683db6B902084cB0FFECe40Da (Base).
-- Raydium: 4k3Dyjzvzp8eMZWUXbBCjEvwSkkk59S5iCNLY3QrkX6R (Solana, USDC/SOL pool).
+- Uniswap V3: `0xE592427A0AEce92De3Edee1F18E0157C05861564` (Ethereum).
+- Uniswap V4: `0x1f9840a85d5aF5B72077a8F9c8f7a8C4b7c0F0E` (Ethereum).
+- PancakeSwap V3: `0x13f4EA83D0bd40E75C8222255bc855a974568Dd4` (BNB Chain).
+- Curve: `0xD51a44d3FaE010294C616388b506AcdA1bfAAE46` (Ethereum).
+- AerodromeFi: `0x420DD381b31aEf6683db6B902084cB0FFECe40Da` (Base).
+- Raydium: `4k3Dyjzvzp8eMZWUXbBCjEvwSkkk59S5iCNLY3QrkX6R` (Solana, USDC/SOL pool).
 
 ## Supported Tokens
 - Native Tokens: ETH, BNB, SOL, WBNB.
@@ -78,8 +78,8 @@ In the Add Meme Coin section:
 
 ## Setting Contract Addresses
 In the Contract Addresses section:
-- AerodromeFi: Enter address (e.g., 0x420DD381b31aEf6683db6B902084cB0FFECe40Da).
-- Raydium: Enter pool ID (e.g., 4k3Dyjzvzp8eMZWUXbBCjEvwSkkk59S5iCNLY3QrkX6R).
+- AerodromeFi: Enter address (e.g., `0x420DD381b31aEf6683db6B902084cB0FFECe40Da`).
+- Raydium: Enter pool ID (e.g., `4k3Dyjzvzp8eMZWUXbBCjEvwSkkk59S5iCNLY3QrkX6R`).
 - Click Update Contract Addresses.
 - Log: “Updated AerodromeFi address: 0x420DD...” or “Updated Raydium address: 4k3Dyjzv...”.
 
@@ -105,4 +105,5 @@ In the Settings section:
 
 # Donate
 Solana: 8A6YQva9Dqdq5oFByhYpjETRj5H3hsW1C5LT8trvxUQ6
+
 Etereum: 0xB56Ee32A5668C21C00FB76E0db373bEcF72472CD
