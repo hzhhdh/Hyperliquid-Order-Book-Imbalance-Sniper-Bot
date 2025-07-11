@@ -2,16 +2,11 @@
 ## Overview
 Optimize your crypto trading with the DeFi Arbitrage Bot, a powerful tool designed for automated arbitrage trading on decentralized exchanges (DEX) across Ethereum, BNB Chain, Base, and Solana. This bot leverages platforms like Uniswap V3/V4, PancakeSwap V3, AerodromeFi, Curve, and Raydium to identify and execute profitable arbitrage opportunities. With cross-chain trading via Wormhole and MEV protection using Jito (Solana) and Flashbots/Matcha (EVM), it ensures secure and efficient trades. The bot features a user-friendly React and Tailwind CSS GUI, allowing seamless configuration of trading parameters, token additions, contract addresses, and .env settings directly in the browser.
 
-<p align="center"><img width="950" height="650" src="arbbot.png" alt="Bot interface" /></p>
-
 Optimized for speed, reliability, and security, the bot includes input validation and detailed logging. It’s ready for mainnet deployment but recommended for testing on Goerli, BSC Testnet, or Solana Devnet to minimize risks.
 
 ## 📥 Installation & Setup
-### macOS
-## Download the .dmg from [Releases](https://singsorganization.gitbook.io/solana-trading-bot-documentation/installation/macos).
 
 ### Windows
-## Download the .exe installer from [Releases](https://singsorganization.gitbook.io/solana-trading-bot-documentation/installation/windows).
 
 # Key Features
 ## Arbitrage Trading
