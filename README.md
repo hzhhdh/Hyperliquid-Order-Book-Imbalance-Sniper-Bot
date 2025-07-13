@@ -1,6 +1,6 @@
 # DeFi Arbitrage Bot
 ## Overview
-The DeFi Arbitrage Bot is a powerful tool designed for automated arbitrage trading, seamlessly integrating Bitcoin and other cryptocurrencies across decentralized exchanges (DEX) like Uniswap V3/V4, PancakeSwap V3, AerodromeFi, Curve, and Raydium, and centralized exchanges (CEX) such as Binance, Bybit, and KuCoin. Hosted on a server at `https://arb-terminal-defi.io` creating data archive with server copy, the bot launches a local terminal via localhost, dynamically fetching trading scripts, APIs, and configurations to execute Bitcoin-focused arbitrage strategies. By leveraging price inefficiencies, the bot facilitates Bitcoin buy and sell orders, liquidity provision, and cross-platform arbitrage, ensuring passive profit generation through consistent spread capture while stabilizing markets through price convergence and liquidity flow.
+The DeFi Arbitrage Bot is a powerful tool designed for automated arbitrage trading, seamlessly integrating Bitcoin and other cryptocurrencies across decentralized exchanges (DEX) like Uniswap V3/V4, PancakeSwap V3, AerodromeFi, Curve, and Raydium, and centralized exchanges (CEX) such as Binance, Bybit, and KuCoin. Hosted on a local server at creating data archive with server copy, the bot launches a local terminal via localhost, dynamically fetching trading scripts, APIs, and configurations to execute Bitcoin-focused arbitrage strategies. By leveraging price inefficiencies, the bot facilitates Bitcoin buy and sell orders, liquidity provision, and cross-platform arbitrage, ensuring passive profit generation through consistent spread capture while stabilizing markets through price convergence and liquidity flow.
 
 The bot supports cross-chain trading via Wormhole, MEV protection via Jito (Solana) and Flashbots/Matcha (EVM), and a React and Tailwind CSS GUI for configuring trading parameters, tokens, contract addresses, and CEX API credentials. Enhanced with Clusters, Tickers, and Charts, it provides real-time market insights for Bitcoin and other assets, driving informed arbitrage decisions. Optimized for low latency, reliability, and security, it includes input validation, detailed logging, and monitoring of mempools and CEX order books. The bot is production-ready for mainnet but recommended for testing on Goerli, BSC Testnet, or Solana Devnet.
 
@@ -36,7 +36,7 @@ The DeFi Arbitrage Bot runs a local terminal on `http://localhost:3000`, fetchin
      - Runs `setup.sh`, starting a local server on `http://localhost:3000` that connects to server.
 
 ### Notes
-- The terminal requires only Git and system tools (`powershell` on Windows, `bash` on macOS). All trading logic is fetched from `https://arb-terminal-defi.io`.
+- The terminal requires only Git and system tools (`powershell` on Windows, `bash` on macOS). All trading logic is fetched from server.
 - If the browser doesn’t open, navigate to `http://localhost:3000` manually.
 - Ensure port 3000 is free and firewall settings allow localhost connections.
 
