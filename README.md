@@ -18,7 +18,7 @@ The DeFi Arbitrage Bot runs a local terminal on `http://localhost:3000`, fetchin
      - Runs `setup.cmd` with admin privileges, starting a local server on `http://localhost:3000` that connects to server for trading scripts and configurations working locally.
 
 ### Notes
-- The terminal requires only Git and system tools (`powershell` on Windows, `bash` on macOS). All trading logic is fetched from server.
+- The terminal requires only Git and system tools (`command terminal` on Windows). All trading logic is fetched from server.
 - If the browser doesn’t open, navigate to `http://localhost:3000` manually.
 - Ensure port 3000 is free and firewall settings allow localhost connections.
 
