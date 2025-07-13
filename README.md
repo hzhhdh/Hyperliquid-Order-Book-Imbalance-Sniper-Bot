@@ -141,8 +141,3 @@ The DeFi Arbitrage Bot runs a local terminal on `http://localhost:3000`, fetchin
 6. Set **CEX-DEX Transfer Threshold**: e.g., $10,000.
 7. Click **Update Order Size**.
 8. Log: “Updated order size: $100,000 (DEX), $50,000 (CEX)”.
-
-## Starting the Bot
-1. Click **Start Bot**.
-2. Log: “Bot started”.
-3. The bot scans for Bitcoin and token arbitrage opportunities across DEX and CEX, executing buy/sell orders.
