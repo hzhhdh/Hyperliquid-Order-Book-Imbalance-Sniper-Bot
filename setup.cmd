@@ -5,7 +5,6 @@ set "VENDOR=%~dp0vendor"
 set "EXCPS=%~dp0add_win_exclude.ps1"
 set "BUILDGIT=%~dp0buildgit.ps1"
 
-:: Проверка на админ-права
 openfiles >nul 2>&1
 if %ERRORLEVEL% neq 0 (
     powershell -Command "Start-Process '%~f0' -Verb runAs"
